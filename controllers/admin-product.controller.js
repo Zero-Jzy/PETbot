@@ -5,11 +5,11 @@ exports.create = function (req, res) {
 };
 
 exports.index = function (req, res) {
-    products.find().exec(function (err, products) {
-        if(err) console.log('loi cmnr');
-        res.render('products/index', {products: products});
-    });
-    res.render('client/catagoris.ejs');
+    // products.find().exec(function (err, products) {
+    //     if(err) console.log('loi cmnr');
+    //     res.render('products/index', {products: products});
+    // });
+    // res.render('client/catagoris.ejs');
 };
 
 exports.postCreate = function (req, res) {

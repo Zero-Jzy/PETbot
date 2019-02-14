@@ -9,7 +9,7 @@ exports.index = function (req, res) {
     //     if(err) console.log('loi cmnr');
     //     res.render('products/index', {products: products});
     // });
-    res.render('client/catagoris.ejs');
+    res.render('client/home.ejs');
 };
 
 exports.details = function (req, res) {

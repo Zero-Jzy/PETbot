@@ -1,0 +1,70 @@
+body{
+    background-color: rgba(139,141,145,0.19);
+}
+
+header{
+    background-color: white;
+}
+
+.header-bottom{
+    border-top: 1px solid rgba(0,0,0,0.13);
+    margin: 25px 0;
+}
+
+
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+nav{
+    height: 50px;
+    line-height: 50px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    width: 80px;
+    text-align: center;
+    border-top: 1px solid transparent;
+}
+
+nav ul li:hover {
+    border-top: 1px solid #ffab48;
+}
+
+nav> ul> li ul{
+    display: none;
+}
+
+.megamenu{
+    position: relative;
+    cursor: pointer;
+    padding: 9px 20px;
+    background: #1e1e1e;
+    letter-spacing: .02em;
+}
+
+.megamenu .megamenu_title h2{
+    margin: 0;
+    color: white;
+    padding: 0;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: .02em
+}
+
+.megamenu-drop{
+    margin-top: 18px;
+    border: 1px solid rgba(255,187,38,0.93);
+    position: absolute;
+    transform: translateX(-40px);
+    width: 255px;
+}
