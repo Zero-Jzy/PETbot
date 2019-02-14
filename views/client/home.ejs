@@ -8,14 +8,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 </head>
 <body>
 <header class="header-container header-sticky ">
     <div class=" menu-top pt-35 pb-35 pt-sm-20 pb-sm-20">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-12 col-lg-3 col-md-3 text-center text-md-left mb-sm-20">
+                <div class="col-12 col-lg-3 col-md-3 text-center text-md-left my-sm-2">
                     <!-- logo -->
                     <div class="logo">
                         <a href="/">
@@ -23,16 +23,20 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 col-md-5 mb-sm-20">
-                    <!-- Search bar -->
-                    <form action="/search" method="get" class="" role="search">
-                        <div class="search-bar">
-                            <input type="search" name="q" value="" placeholder="Search our store" aria-label="Search our store">
-                            <button type="submit"><i class="lnr lnr-magnifier"></i></button>
-                        </div>
-                    </form>
+                <div class="col-12 col-lg-6 col-md-5 mb-sm-20 my-sm-2">
+                    <div class="m-auto">
+                        <form action="/search" method="get">
+                            <div class="search-bar">
+                                <input type="search" name="q" value="" placeholder="Search ...">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
-                <div class="col-12 col-lg-3 col-md-4">
+                <div class="col-12 col-lg-3 col-md-4 mt-sm-3 d-flex justify-content-md-end justify-content-center">
+                    <div class="phone-div">Call Us <strong> +088888888</strong></div>
+                    <div class="icon-phone"><i class="fas fa-2x fa-phone"></i></div>
 
                 </div>
             </div>
@@ -42,141 +46,202 @@
     <div class="header-bottom navigation-menu ">
         <div class="container">
             <div class="row">
-                <div class="col col-lg-3">
-                    <div class="megamenu">
+                <div class="col col-md-5 col-lg-4 col-xl-3">
+                    <div>
                         <div class="navleft-container hidden-md-down ">
                             <div class="megamenu">
-                                <div class="megamenu_title">
-                                    <h2><i class="ion-navicon"></i>Browse categories</h2>
+                                <div class="megamenu_title" for="toggle">
+                                    <input id="checkbox-toggle" class="d-none" type="checkbox">
+                                    <h2><i class="fas fa-bars"></i><strong class="ml-2">Danh Mục Sản Phẩm</strong><span class="text-right float-right"><i class="fas fa-angle-down"></i></span></h2>
                                 </div>
-                                <div id="megamenu" class="megamenu-drop">
-                                    <ul>
-                                        <li>1</li>
-                                        <li>1</li>
-                                        <li>1</li>
-                                        <li>1</li>
-                                    </ul>
-                                    <!--<div id="ver_pt_menu10" class="pt_menu"><div class="parentMenu"><a href="http://demo.posthemes.com/pos_pataku/en/10-sofas-chairs"><span>Sofas &amp; Chairs</span></a></div><div class="wrap-popup"><div id="ver_popup10" class="popup"><div class="box-popup"><div class="block1"><div class="column first col1" style="float:left;"><div class="itemMenu level1"><a class="itemMenuName level3" href="http://demo.posthemes.com/pos_pataku/en/18-living-chairs"><span>Living Chairs</span></a><div class="itemSubMenu level3"><div class="itemMenu level4"><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/21-sofas"><span>Sofas</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/22-armchairs"><span>Armchairs</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/23-dining-chairs-benches"><span>Dining Chairs &amp; Benches</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/24-desk-chairs"><span>Desk Chairs</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/25-ottomans-footstools"><span>Ottomans &amp; Footstools</span></a></div></div></div></div><div class="column col2" style="float:left;"><div class="itemMenu level1"><a class="itemMenuName level3" href="http://demo.posthemes.com/pos_pataku/en/19-sofa"><span>Sofa</span></a><div class="itemSubMenu level3"><div class="itemMenu level4"><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/26-dinning-tables"><span>Dinning Tables</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/27-dinning-chairs"><span>Dinning Chairs</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/28-sideboards"><span>Sideboards</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/29-coffee-tables"><span>Coffee Tables</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/30-dressing-tables"><span>Dressing Tables</span></a></div></div></div></div><div class="column last col3" style="float:left;"><div class="itemMenu level1"><a class="itemMenuName level3" href="http://demo.posthemes.com/pos_pataku/en/20-storage"><span>Storage</span></a><div class="itemSubMenu level3"><div class="itemMenu level4"><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/31-chairs-sofas"><span>Chairs &amp; Sofas</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/32-tables"><span>Tables</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/33-sets"><span>Sets</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/34-loungers"><span>Loungers</span></a></div></div></div></div><div class="clearBoth"></div></div></div></div></div></div><div id="ver_pt_menu11" class="pt_menu"><div class="parentMenu"><a href="http://demo.posthemes.com/pos_pataku/en/11-dinning-room"><span>Dinning Room</span></a></div><div class="wrap-popup"><div id="ver_popup11" class="popup"><div class="box-popup"><div class="block1"><div class="column first col1" style="float:left;"><div class="itemMenu level1"><a class="itemMenuName level3" href="http://demo.posthemes.com/pos_pataku/en/35-dining-tables"><span>Dining tables</span></a><div class="itemSubMenu level3"><div class="itemMenu level4"><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/38-crochet"><span>Crochet</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/39-sweaters"><span>Sweaters</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/40-dining-chairs"><span>Dining chairs</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/41-loungers"><span>Loungers</span></a></div></div></div></div><div class="column col2" style="float:left;"><div class="itemMenu level1"><a class="itemMenuName level3" href="http://demo.posthemes.com/pos_pataku/en/36-dining-sets"><span>Dining sets</span></a><div class="itemSubMenu level3"><div class="itemMenu level4"><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/42-hoodies"><span>hoodies</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/43-wedges"><span>Wedges</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/44-living-tables"><span>living tables</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/45-regular-beds"><span>Regular Beds</span></a></div></div></div></div><div class="column last col3" style="float:left;"><div class="itemMenu level1"><a class="itemMenuName level3" href="http://demo.posthemes.com/pos_pataku/en/37-dining-chairs"><span>Dining chairs</span></a><div class="itemSubMenu level3"><div class="itemMenu level4"><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/50-regular-beds"><span>Regular Beds</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/51-sleight"><span>Sleight</span></a><a class="itemMenuName level4" href="http://demo.posthemes.com/pos_pataku/en/52-best-living"><span>best living</span></a></div></div></div></div><div class="clearBoth"></div></div></div></div></div></div><div id="ver_pt_menu12" class="pt_menu noSub"><div class="parentMenu"><a href="http://demo.posthemes.com/pos_pataku/en/12-out-door-room"><span>Out Door Room</span></a></div></div><div id="ver_pt_menu13" class="pt_menu noSub"><div class="parentMenu"><a href="http://demo.posthemes.com/pos_pataku/en/13-room-living"><span>Room living</span></a></div></div><div id="ver_pt_menu14" class="pt_menu noSub"><div class="parentMenu"><a href="http://demo.posthemes.com/pos_pataku/en/14-estilo"><span>Estilo</span></a></div></div><div id="ver_pt_menu53" class="pt_menu noSub"><div class="parentMenu"><a href="http://demo.posthemes.com/pos_pataku/en/53-living-chairs"><span>living Chairs</span></a></div></div><div id="ver_pt_menu54" class="pt_menu noSub"><div class="parentMenu"><a href="http://demo.posthemes.com/pos_pataku/en/54-new-sofas"><span>New Sofas</span></a></div></div><div id="ver_pt_menu55" class="pt_menu noSub hide_menu_block" style="display: none;"><div class="parentMenu"><a href="http://demo.posthemes.com/pos_pataku/en/55-sleight-sofas"><span>Sleight  Sofas</span></a></div></div>-->
+                                <div id="megamenu" class="megamenu-drop position-absolute">
+                                        <div class="item-menu">
+                                            <div class="title-item-menu w-100 float-left"><img src="img/water.png" alt="">Chai Nhựa<i class="fas fa-angle-right"></i></div>
+                                            <div class="popup bg-danger float-left position-absolute"><br><br></div>
+                                        </div>
+                                        <div class="item-menu">
+                                            <div class="title-item-menu w-100 float-left"><img src="img/milk-bottle.png" alt="">Lọ Nhựa</div>
+                                            <!--<div class="popup bg-danger float-left position-absolute"><br><br></div>-->
+                                        </div>
+                                        <div class="item-menu">
+                                            <div class="title-item-menu w-100 float-left"><img src="img/butter.png" alt="">Hũ Nhựa</div>
+                                            <!--<div class="popup bg-danger float-left position-absolute"><br><br></div>-->
+                                        </div>
 
-                                    <!--<div class="pt_menu noSub"><div class="parentMenu"><a href="javascript:void(0)" class="view_more"><span><i class="material-icons">add_circle_outline</i>More Categories</span></a></div></div></div>-->
+                                        <!--<div><i class="fas fa-wine-bottle"></i> <img src="img/milk-bottle.png" alt="">Chai Nhựa</div>-->
+                                        <!--<div><i class="fas fa-wine-bottle"></i> <img src="img/butter.png" alt="">Chai Nhựa</div>-->
+                                        <!--<div><i class="fas fa-wine-bottle"></i>Chai Nhựa</div>-->
+                                    <!--<div><i class="fas fa-wine-bottle"></i>Chai Nhựa</div>-->
+                                    <!--<ul>-->
+                                        <!--<li><i class="fas fa-wine-bottle"></i>Chai Nhựa</li>-->
+                                        <!--<li><i class="fas fa-wine-bottle"></i>Lọ Nhựa</li>-->
+                                        <!--<li><i class="fas fa-wine-bottle"></i>Bình Nhựa</li>-->
+                                        <!--<li></li>-->
+                                    <!--</ul>-->
                                 </div>
                                     <div class="clearfix"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col col-lg-9">
+                <div class="col col-md-7 col-lg-8 col-xl-9">
                     <nav>
                         <ul>
-                            <li class="active menu-item-has-children"><a href="/">Home</a>
-                            </li>
-                            <li class=" menu-item-has-children"><a style="text-decoration: none" href="/collections">Product</a>
-                                <ul class="sub-menu">
-                                    <li><a href="">1. New and sale badge</a></li>
-                                    <li><a href="">2. New badge product</a></li>
-                                    <li><a href="">3. Variable product</a></li>
-                                    <li><a href="">4. Soldout product</a></li>
-                                    <li><a href="">5. Simple product</a></li>
-                                    <li><a href="">6. Variable with soldout</a></li>
-                                </ul>
-                            </li>
-                            <li class=" menu-item-has-children"><a href="#">Pages</a>
-                                <ul class="sub-menu">
-                                    <li><a href="/pages/size-chart">Size Chart</a></li>
-                                    <li><a href="/pages/shipping-policy">Shipping Policy</a></li>
-                                    <li><a href="/pages/wishlist">Wishlist</a></li>
-                                    <li><a href="/pages/about">About</a></li>
-                                </ul>
-                            </li>
-                            <li class=""><a href="https://pataku-demo.myshopify.com/blogs/news">Blog</a></li>
-                            <li class=""><a href="/pages/contact">Contact</a></li>
+                            <li class="active menu-item-has-children"><a href="/">Home</a></li>
+                            <li class=" menu-item-has-children"><a href="/">Product</a></li>
+                            <li class=" menu-item-has-children"><a href="/">Pages</a></li>
+                            <li class=""><a href="/">Blog</a></li>
+                            <li class=""><a href="/">Contact</a></li>
+                            <li class=""><div id="test" style="width: 50px;height: 50px;"></div></li>
                         </ul>
                     </nav>
 
                 </div>
-                <div class="col-12 d-block d-lg-none">
-                    <!-- Mobile Menu -->
-                    <div class="mobile-menu mean-container"><div class="mean-bar"><a href="#nav" class="meanmenu-reveal" style="background:;color:;right:0;left:auto;"><span class="menu-bar"></span></a><nav class="mean-nav">
-                                <ul style="display: none;">
-                                    <li class="active menu-item-has-children"><a href="/">Home</a>
-                                        <ul class="sub-menu" style="display: none;">
-                                            <li><a href="https://pataku-demo.myshopify.com/?preview_theme_id=45345767524">Home Shop 1</a></li>
-                                            <li><a href="https://pataku-demo.myshopify.com/?preview_theme_id=64617054308">Home Shop 2</a></li>
-                                            <li><a href="https://pataku-demo.myshopify.com/?preview_theme_id=64804159588">Home Shop 3</a></li>
-                                            <li><a href="https://pataku-demo.myshopify.com/?preview_theme_id=64854098020">Home Shop 4</a></li>
-                                            <li><a href="https://pataku-demo.myshopify.com/?preview_theme_id=65562640484">Home RTL Version</a></li>
-                                        </ul>
-                                        <a class="mean-expand" href="#" style="font-size: 0">+</a></li>
-                                    <li class=" menu-item-has-children"><a href="/collections/all">Shop</a>
-                                        <ul class="mega-menu three-column" style="display: none;">
-                                            <li class="menu-item-has-children megamenu-children"><a href="/collections">Collection 01</a>
-                                                <ul style="display: none;">
-                                                    <li><a href="/products/1-new-and-sale-badge-product">New and sale badge</a></li>
+                <!--<div class="col-12 d-block d-lg-none">-->
+                    <!--&lt;!&ndash; Mobile Menu &ndash;&gt;-->
+                    <!--<div class="mobile-menu mean-container"><div class="mean-bar"><a href="#nav" class="meanmenu-reveal" style="background:;color:;right:0;left:auto;"><span class="menu-bar"></span></a><nav class="mean-nav">-->
+                                <!--<ul style="display: none;">-->
+                                    <!--<li class="active menu-item-has-children"><a href="/">Home</a>-->
+                                        <!--<ul class="sub-menu" style="display: none;">-->
+                                            <!--<li><a href="https://pataku-demo.myshopify.com/?preview_theme_id=45345767524">Home Shop 1</a></li>-->
+                                            <!--<li><a href="https://pataku-demo.myshopify.com/?preview_theme_id=64617054308">Home Shop 2</a></li>-->
+                                            <!--<li><a href="https://pataku-demo.myshopify.com/?preview_theme_id=64804159588">Home Shop 3</a></li>-->
+                                            <!--<li><a href="https://pataku-demo.myshopify.com/?preview_theme_id=64854098020">Home Shop 4</a></li>-->
+                                            <!--<li><a href="https://pataku-demo.myshopify.com/?preview_theme_id=65562640484">Home RTL Version</a></li>-->
+                                        <!--</ul>-->
+                                        <!--<a class="mean-expand" href="#" style="font-size: 0">+</a></li>-->
+                                    <!--<li class=" menu-item-has-children"><a href="/collections/all">Shop</a>-->
+                                        <!--<ul class="mega-menu three-column" style="display: none;">-->
+                                            <!--<li class="menu-item-has-children megamenu-children"><a href="/collections">Collection 01</a>-->
+                                                <!--<ul style="display: none;">-->
+                                                    <!--<li><a href="/products/1-new-and-sale-badge-product">New and sale badge</a></li>-->
 
-                                                    <li><a href="/products/11-product-with-video"> Product with video</a></li>
+                                                    <!--<li><a href="/products/11-product-with-video"> Product with video</a></li>-->
 
-                                                    <li><a href="/products/2-new-badge-product">New badge product</a></li>
+                                                    <!--<li><a href="/products/2-new-badge-product">New badge product</a></li>-->
 
-                                                    <li><a href="/products/3-variable-product">Variable product</a></li>
+                                                    <!--<li><a href="/products/3-variable-product">Variable product</a></li>-->
 
-                                                    <li><a href="/products/4-soldout-product">Soldout product</a></li>
-                                                </ul>
-                                                <a class="mean-expand" href="#" style="font-size: 0">+</a></li>
-                                            <li class="menu-item-has-children megamenu-children"><a href="/collections">Collection 02</a>
-                                                <ul style="display: none;">
-                                                    <li><a href="/products/5-simple-product">Simple product</a></li>
+                                                    <!--<li><a href="/products/4-soldout-product">Soldout product</a></li>-->
+                                                <!--</ul>-->
+                                                <!--<a class="mean-expand" href="#" style="font-size: 0">+</a></li>-->
+                                            <!--<li class="menu-item-has-children megamenu-children"><a href="/collections">Collection 02</a>-->
+                                                <!--<ul style="display: none;">-->
+                                                    <!--<li><a href="/products/5-simple-product">Simple product</a></li>-->
 
-                                                    <li><a href="/products/6-variable-with-soldout-product"> Variable with soldout</a></li>
+                                                    <!--<li><a href="/products/6-variable-with-soldout-product"> Variable with soldout</a></li>-->
 
-                                                    <li><a href="/products/7-sample-affiliate-product"> Sample affiliate product</a></li>
+                                                    <!--<li><a href="/products/7-sample-affiliate-product"> Sample affiliate product</a></li>-->
 
-                                                    <li><a href="/products/8-countdown-product">Countdown product</a></li>
+                                                    <!--<li><a href="/products/8-countdown-product">Countdown product</a></li>-->
 
-                                                    <li><a href="/products/9-without-shortcode-product"> Without shortcode</a></li>
-                                                </ul>
-                                                <a class="mean-expand" href="#" style="font-size: 0">+</a></li>
-                                            <li class="menu-item-has-children megamenu-children"><a href="/collections">Collection 03</a>
-                                                <ul style="display: none;">
-                                                    <li><a href="/products/7-sample-affiliate-product">Sample affiliate product</a></li>
-                                                    <li><a href="/products/demo-product-title-3">Demo product title</a></li>
-                                                    <li><a href="/products/8-countdown-product">Countdown product</a></li>
-                                                    <li><a href="/products/demo-product-title-1">Demo product title</a></li>
-                                                    <li><a href="/products/11-product-with-video">Product with video</a></li>
-                                                </ul>
-                                                <a class="mean-expand" href="#" style="font-size: 0">+</a></li>
-                                        </ul>
-                                        <a class="mean-expand" href="#" style="font-size: 0">+</a></li>
-                                    <li class=" menu-item-has-children"><a href="/collections">Product</a>
-                                        <ul class="sub-menu" style="display: none;">
-                                            <li><a href="/products/1-new-and-sale-badge-product">1. New and sale badge</a></li>
-                                            <li><a href="/products/2-new-badge-product">2. New badge product</a></li>
-                                            <li><a href="/products/3-variable-product">3. Variable product</a></li>
-                                            <li><a href="/products/4-soldout-product">4. Soldout product</a></li>
-                                            <li><a href="/products/5-simple-product">5. Simple product</a></li>
-                                            <li><a href="/products/6-variable-with-soldout-product">6. Variable with soldout</a></li>
-                                            <li><a href="/products/7-sample-affiliate-product">7. Sample affiliate product</a></li>
-                                            <li><a href="/products/8-countdown-product">8. Countdown product</a></li>
-                                            <li><a href="/products/9-without-shortcode-product">9. Without shortcode</a></li>
-                                        </ul>
-                                        <a class="mean-expand" href="#" style="font-size: 0">+</a></li>
-                                    <li class=" menu-item-has-children"><a href="#">Pages</a>
-                                        <ul class="sub-menu" style="display: none;">
-                                            <li><a href="/pages/size-chart">Size Chart</a></li>
-                                            <li><a href="/pages/shipping-policy">Shipping Policy</a></li>
-                                            <li><a href="/pages/wishlist">Wishlist</a></li>
-                                            <li><a href="/pages/about">About</a></li>
-                                        </ul>
-                                        <a class="mean-expand" href="#" style="font-size: 0">+</a></li>
-                                    <li class=""><a href="https://pataku-demo.myshopify.com/blogs/news">Blog</a></li>
-                                    <li class="mean-last"><a href="/pages/contact">Contact</a></li>
-                                </ul>
-                            </nav></div></div>
-                </div>
+                                                    <!--<li><a href="/products/9-without-shortcode-product"> Without shortcode</a></li>-->
+                                                <!--</ul>-->
+                                                <!--<a class="mean-expand" href="#" style="font-size: 0">+</a></li>-->
+                                            <!--<li class="menu-item-has-children megamenu-children"><a href="/collections">Collection 03</a>-->
+                                                <!--<ul style="display: none;">-->
+                                                    <!--<li><a href="/products/7-sample-affiliate-product">Sample affiliate product</a></li>-->
+                                                    <!--<li><a href="/products/demo-product-title-3">Demo product title</a></li>-->
+                                                    <!--<li><a href="/products/8-countdown-product">Countdown product</a></li>-->
+                                                    <!--<li><a href="/products/demo-product-title-1">Demo product title</a></li>-->
+                                                    <!--<li><a href="/products/11-product-with-video">Product with video</a></li>-->
+                                                <!--</ul>-->
+                                                <!--<a class="mean-expand" href="#" style="font-size: 0">+</a></li>-->
+                                        <!--</ul>-->
+                                        <!--<a class="mean-expand" href="#" style="font-size: 0">+</a></li>-->
+                                    <!--<li class=" menu-item-has-children"><a href="/collections">Product</a>-->
+                                        <!--<ul class="sub-menu" style="display: none;">-->
+                                            <!--<li><a href="/products/1-new-and-sale-badge-product">1. New and sale badge</a></li>-->
+                                            <!--<li><a href="/products/2-new-badge-product">2. New badge product</a></li>-->
+                                            <!--<li><a href="/products/3-variable-product">3. Variable product</a></li>-->
+                                            <!--<li><a href="/products/4-soldout-product">4. Soldout product</a></li>-->
+                                            <!--<li><a href="/products/5-simple-product">5. Simple product</a></li>-->
+                                            <!--<li><a href="/products/6-variable-with-soldout-product">6. Variable with soldout</a></li>-->
+                                            <!--<li><a href="/products/7-sample-affiliate-product">7. Sample affiliate product</a></li>-->
+                                            <!--<li><a href="/products/8-countdown-product">8. Countdown product</a></li>-->
+                                            <!--<li><a href="/products/9-without-shortcode-product">9. Without shortcode</a></li>-->
+                                        <!--</ul>-->
+                                        <!--<a class="mean-expand" href="#" style="font-size: 0">+</a></li>-->
+                                    <!--<li class=" menu-item-has-children"><a href="#">Pages</a>-->
+                                        <!--<ul class="sub-menu" style="display: none;">-->
+                                            <!--<li><a href="/pages/size-chart">Size Chart</a></li>-->
+                                            <!--<li><a href="/pages/shipping-policy">Shipping Policy</a></li>-->
+                                            <!--<li><a href="/pages/wishlist">Wishlist</a></li>-->
+                                            <!--<li><a href="/pages/about">About</a></li>-->
+                                        <!--</ul>-->
+                                        <!--<a class="mean-expand" href="#" style="font-size: 0">+</a></li>-->
+                                    <!--<li class=""><a href="https://pataku-demo.myshopify.com/blogs/news">Blog</a></li>-->
+                                    <!--<li class="mean-last"><a href="/pages/contact">Contact</a></li>-->
+                                <!--</ul>-->
+                            <!--</nav></div></div>-->
+                <!--</div>-->
             </div>
         </div>
     </div>
 
     <!--=======  End of navigation menu  =======-->
 </header>
+
+<div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="carousel-title"></div>
+                <img class="d-block" src="img/imgdemo1.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-title"></div>
+                <img class="d-block" src="img/imgdemo2.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-title"></div>
+                <img class="d-block" src="img/imgdemo3.png" alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+
+<script src="/js/lib/jquery-3.3.1.min.js"></script>
+<script src="/js/lib/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".megamenu_title").click(function(){
+            var arrow = $(".megamenu .megamenu_title span");
+            var elm = document.getElementById('checkbox-toggle');
+            elm.checked = !elm.checked;
+                if (elm.checked === true){
+                    $('#megamenu').animate({height:'show'})
+                    arrow.html('<i class="fas fa-angle-up"></i>')
+                }else{
+                    $('#megamenu').animate({height:'hide'})
+                    arrow.html('<i class="fas fa-angle-down"></i>')
+                }
+            })
+        $(".item-menu").hover(
+            function(){
+            $(this).find('.popup').animate({height:'show'},500)
+        }, function(){
+            $(this).find('.popup').css('display','none')
+        });
+        // );
+        //     $(".megamenu .megamenu_title span").html('<i class="fas fa-angle-up"></i>')
+        // });
+
+    });
+</script>
 </body>
 </html>
