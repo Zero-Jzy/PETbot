@@ -35,6 +35,7 @@ app.get('/',function (req, res) {
     res.render('client/home');
 });
 
+
 app.get('/admin',function (req, res) {
     res.render('admin/home');
 });
