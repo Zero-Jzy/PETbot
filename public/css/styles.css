@@ -9,6 +9,15 @@ body{
 .fa-heart{
     color: red;
 }
+.card-img-top {
+    height: 200px;
+}
+.my-img-fluid{
+    height: 60px;
+}
+.card{
+    padding: 0 10px;
+}
 .navbar{
     margin-bottom: 50px;
 }
@@ -64,7 +73,7 @@ bottom là khoảng cách từ thằng element này đến border-bottom(cạnh 
     bottom: -150px;
 }
 .carousel-control-next,.carousel-control-prev{
-    top: 375px;
+    top: 400px;
 }
 
 /*width và height ở đây để chỉnh kích cỡ ảnh indicator*/
