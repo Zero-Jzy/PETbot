@@ -51,6 +51,16 @@ nav ul li:hover {
     border-top: 1px solid #cea45f;
 }
 
+.scroll-nav{
+    z-index: 9999;
+    background: white;
+    position: fixed;
+    border-bottom: 1px solid rgba(0,0,0,0.13);
+    top: -100px;
+    width: 100%;
+    transition: .8s;
+}
+
 /*------------------------*/
 /*Start Megamenu*/
 .megamenu{
@@ -101,7 +111,7 @@ nav ul li:hover {
     padding: 12px;
     margin-bottom: 5px;
     border-bottom: 1px solid rgba(209,208,193,0.2);
-
+    cursor: pointer;
 }
 
 .megamenu-drop .item-menu .title-item-menu img{
@@ -117,20 +127,6 @@ nav ul li:hover {
 .megamenu-drop .item-menu .title-item-menu:hover {
     color: #cea45f;
     border-bottom: 1px solid #cea45f;
-}
-
-.megamenu-drop ul li i{
-    padding-right: 10px;
-}
-
-.megamenu-drop ul li{
-    cursor: pointer;
-    display: block;
-    margin: 5px;
-    padding: 10px 10px;
-    border-bottom: 1px solid rgba(209,208,193,0.2);
-    list-style: none;
-    transition: .5s;
 }
 
 .megamenu-drop .popup{
@@ -203,7 +199,6 @@ nav ul li:hover {
 .carousel-title{
     width: 50%;
     height: 100%;
-    background-color: #1c7430;
     position: absolute;
 }
 
@@ -216,4 +211,39 @@ nav ul li:hover {
     position: absolute;
     right: 0;
     width: 50%;
+}
+
+.carousel-indicators li {
+    position: relative;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #e3e3e3;
+    flex: 0 1 auto;
+}
+.carousel-indicators .active {
+    border: 2px solid #cea45f;
+}
+
+.btn-slide-show{
+    color: white;
+    padding: 6px 12px;
+    background: #1e1e1e;
+    border: none;
+    text-transform: uppercase;
+}
+
+.carousel-title p{
+    color: #cea45f;
+}
+
+.carousel-title .carousel-box-title{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%,-50%);
 }
