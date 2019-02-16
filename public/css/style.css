@@ -196,24 +196,24 @@ nav ul li:hover {
 /*end header top*/
 /*---------------------------*/
 
-.carousel-title{
+.p-carousel-title{
     width: 50%;
     height: 100%;
     position: absolute;
 }
 
-.carousel-item{
+.p-carousel-item{
     height: 550px;
     background: white;
 }
 
-.carousel-item img{
+.p-carousel-item img{
     position: absolute;
     right: 0;
     width: 50%;
 }
 
-.carousel-indicators li {
+.p-carousel-indicators li {
     position: relative;
     width: 13px;
     height: 13px;
@@ -225,7 +225,7 @@ nav ul li:hover {
     background-color: #e3e3e3;
     flex: 0 1 auto;
 }
-.carousel-indicators .active {
+.p-carousel-indicators .active {
     border: 2px solid #cea45f;
 }
 
@@ -237,13 +237,4 @@ nav ul li:hover {
     text-transform: uppercase;
 }
 
-.carousel-title p{
-    color: #cea45f;
-}
-
-.carousel-title .carousel-box-title{
-    position: absolute;
-    top: 40%;
-    left: 40%;
-    transform: translate(-50%,-50%);
-}
+/*uc*/
