@@ -261,14 +261,14 @@
             var arrow = $(".megamenu .megamenu_title span");
             var elm = document.getElementById('checkbox-toggle');
             elm.checked = !elm.checked;
-                if (elm.checked === true){
-                    $('#megamenu').animate({height:'show'})
-                    arrow.html('<i class="fas fa-angle-up"></i>')
-                }else{
-                    $('#megamenu').animate({height:'hide'})
-                    arrow.html('<i class="fas fa-angle-down"></i>')
-                }
-            })
+            if (elm.checked === true){
+                $('#megamenu').animate({height:'show'})
+                arrow.html('<i class="fas fa-angle-up"></i>')
+            }else{
+                $('#megamenu').animate({height:'hide'})
+                arrow.html('<i class="fas fa-angle-down"></i>')
+            }
+        })
 
         $(".item-menu").hover(
             function(){
