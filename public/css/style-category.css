@@ -130,3 +130,78 @@ input[type="number"]{
 a{
     text-decoration: none;
 }
+/*color-select*/
+.select-color h5{
+    margin-top: 20px;
+    border-bottom: none;
+    margin-left: 0px;
+}
+.select-color a{
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background-color: #1e1e1e;
+
+}
+.list-color{
+    display:inline-block;
+    margin-left: 10px;
+}
+
+.list-color a{
+    border-radius: 50%;
+}
+.select-color{
+    border-top: 2px solid rgba(49,49,44,0.18);
+}
+/*
+style material
+ */
+.material h5{
+    padding-top: 20px;
+    border-top: 2px solid rgba(49,49,44,0.18);
+    border-bottom: none;
+}
+/*
+style shape
+ */
+.shape{
+    margin-top: 20px;
+    border-top: 2px solid rgba(49,49,44,0.18);
+    border-bottom: none;
+    padding-top: 20px;
+}
+
+/*
+card
+ */
+.card-body h5{
+    color: #cea45f;
+}
+.card button:hover{
+    color: white;
+    background-color: #cea45f;
+    border-color: #cea45f;
+}
+.card-title a{
+    font-size: 22px;
+    color: #1e1e1e;
+}
+.card-title a:hover{
+    color: white;
+    color: #cea45f;
+}
+.card-text{
+    font-size: 15px;
+    color: #1e1e1e;
+}
+.card button{
+    border-color: #cea45f;
+}
+.center a{
+    color: #cea45f;
+}
+.center a:hover{
+    background-color: #cea45f;
+    color: white;
+}
