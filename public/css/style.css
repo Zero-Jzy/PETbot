@@ -1,6 +1,13 @@
-body{
-    background-color: #f1f3f6;
+
+
+a{
+    text-decoration: none;
 }
+
+a:hover{
+    text-decoration: none;
+}
+
 
 header{
     background-color: white;
@@ -9,15 +16,8 @@ header{
 .header-bottom{
     border-top: 1px solid rgba(0,0,0,0.13);
     border-bottom: 1px solid rgba(0,0,0,0.13);
-    margin: 25px 0;
+    margin: 25px 0 0 0;
 }
-
-
-a:hover {
-    color: #0056b3;
-    text-decoration: none;
-}
-
 nav{
     height: 50px;
     line-height: 50px;
@@ -25,18 +25,15 @@ nav{
 
 nav ul{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     list-style: none;
     padding: 0;
 }
 nav ul li a{
-    color: #151413;
-    transition: .5s;
-}
-
-nav ul li a:hover{
-    color: #cea45f;
-
+    color: #131b2b;
+    transition: .3s;
+    font-weight: 900;
+    font-size: 16px;
 }
 
 nav ul li {
@@ -47,8 +44,12 @@ nav ul li {
 
 }
 
-nav ul li:hover {
-    border-top: 1px solid #cea45f;
+nav ul li:hover{
+    border-top: 1px solid #4929e0;
+}
+
+nav ul li:hover a{
+    color: #4929e0;
 }
 
 .scroll-nav{
@@ -65,7 +66,7 @@ nav ul li:hover {
 /*Start Megamenu*/
 .megamenu{
     position: relative;
-    background: #1e1e1e;
+    background: #131b2b;
     letter-spacing: .02em;
 }
 
@@ -76,7 +77,7 @@ nav ul li:hover {
 }
 
 .megamenu .megamenu_title:hover{
-    background: #cea45f;
+    background: #4929e0;
 }
 .megamenu .megamenu_title h2{
     margin: 0;
@@ -196,6 +197,11 @@ nav ul li:hover {
 /*end header top*/
 /*---------------------------*/
 
+
+.slide-show{
+    background-color: #f1f3f6;
+}
+
 .p-carousel-title{
     width: 50%;
     height: 100%;
@@ -229,6 +235,12 @@ nav ul li:hover {
     border: 2px solid #cea45f;
 }
 
+.carousel-box-title{
+    position: absolute;
+    left: 20%;
+    top: 20%;
+}
+
 .btn-slide-show{
     color: white;
     padding: 6px 12px;
@@ -237,4 +249,22 @@ nav ul li:hover {
     text-transform: uppercase;
 }
 
+
 /*uc*/
+.box1 .top{
+    margin-bottom: 20px;
+}
+
+
+
+.f-products-box{
+    overflow: hidden;
+}
+
+.f-products-box img{
+    width: 100%;
+}
+
+.iner-box{
+    background: #f1f3f5;
+}
