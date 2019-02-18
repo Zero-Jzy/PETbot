@@ -1,52 +1,95 @@
-.mybreadcrumb{
-    margin-left: 10px;
-    height: 40px;
-    font-size: 14px;
 
+
+.breadcrumb{
+    background: #f1f3f5;
+    margin-bottom: 30px;
 }
+
+.mybreadcrumb{
+    margin-left: 20px;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
 
 .mybreadcrumb a{
     color: cadetblue;
 }
 
-aside{
-    background-color: #f8f8f8;
 
+aside .categories{
+    padding: 30px 15px;
+    border-radius: 1px;
+    border: 0.5px solid rgba(58,50,63,0.2);
+}
+
+aside .categories > ul > li{
+    border-bottom: 1px solid rgba(63,60,57,0.21);
+}
+
+aside .filter{
+    padding: 15px;
+    border-radius: 1px;
+    border: 0.5px solid rgba(58,50,63,0.2);
 }
 
 aside h5{
-    font-weight: bold;
-    margin-left: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #1e1e1e;
+    text-transform: capitalize!important;
+    margin-bottom: 10px
+}
+aside ul{
+    padding: 0;
+    margin-bottom: 0;
 }
 
+aside .categories > ul > li{
+    list-style: none;
+    padding: 15px 0;
+    color: #1e1e1e;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+aside .categories  ul  li  ul >li{
+    display: block;
+    padding: 4px 0;
+}
+
+.d-categories{
+    display: none;
+    padding-left: 15px;
+}
 aside ul li{
+    text-decoration: none;
     list-style: none;
 }
 
 aside ul li a{
     color: #1e1e1e;
-    padding: 5px 0;
+    font-weight: 300;
     cursor: pointer;
-    font-size: 14px;
 }
 
-aside ul li {
-    color: #1e1e1e;
-    padding: 5px 0;
-    cursor: pointer;
-    font-size: 14px;
-}
 
-aside ul li:hover{
+aside ul > li:hover > a {
     color: #f72524;
 }
 
-aside ul li a:hover{
+aside ul > li:hover >label{
     color: #f72524;
 }
 
-.col-aside div{
+.filter ul li{
+    padding: 10px;
+    font-size: 14px;
+}
 
+.filter ul li a{
+    padding-left: 10px;
 }
 
 input[type="number"]{
@@ -58,9 +101,6 @@ input[type="number"]{
     font-size: 12px;
 }
 
-.categories{
-    border-bottom: 2px solid rgba(49,49,44,0.18);
-}
 
 .filter-price{
     margin-top: 20px;
@@ -102,7 +142,6 @@ input[type="number"]{
 
 .toolbar{
     height: 60px;
-    border: 1px solid rgba(0,0,0,0.28);
 }
 
 .toolbar ul li{
@@ -122,9 +161,11 @@ input[type="number"]{
 
 .toolbar select{
     background: none;
-    border: none;
+    border: 1px solid rgba(63,60,57,0.21);
+    padding: 5px 30px;
     outline: none;
-    width: 100px;
+    font-size: 14px;
+    color: #1e1e1e;
 
 }
 a{
@@ -145,7 +186,7 @@ a{
 }
 .list-color{
     display:inline-block;
-    margin-left: 10px;
+    margin: 0 10px;
 }
 
 .list-color a{
@@ -175,8 +216,19 @@ style shape
 /*
 card
  */
-.card-body h5{
-    color: #cea45f;
+
+.card-body h6 a{
+    line-height: 20px;
+    letter-spacing: .02em;
+    display: block;
+    overflow: hidden;
+    color: #1e1e1e;
+    font-size: 14px;
+    margin-bottom: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 300;
 }
 .card button:hover{
     color: white;
@@ -205,3 +257,13 @@ card
     background-color: #cea45f;
     color: white;
 }
+
+
+/*_______________________________*/
+
+aside .categories > ul > li:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/*_______________________________*/

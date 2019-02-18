@@ -1,4 +1,7 @@
-
+body{
+    font-family: 'Rubik',sans-serif;
+    letter-spacing: .02em;
+}
 
 
 a{
@@ -56,12 +59,12 @@ nav ul li:hover a{
 
 .scroll-nav{
     z-index: 9999;
-    background: white;
+    background: rgba(255,255,255,0.6);
     position: fixed;
     border-bottom: 1px solid rgba(0,0,0,0.13);
     top: -100px;
     width: 100%;
-    transition: .8s;
+    transition: 1s;
 }
 
 /*------------------------*/
