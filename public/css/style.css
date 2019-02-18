@@ -1,6 +1,6 @@
-body{
-    background-color: #f1f3f6;
-}
+/*body{*/
+    /*background-color: #f1f3f6;*/
+/*}*/
 
 header{
     background-color: white;
@@ -196,24 +196,24 @@ nav ul li:hover {
 /*end header top*/
 /*---------------------------*/
 
-.carousel-title{
+.p-carousel-title{
     width: 50%;
     height: 100%;
     position: absolute;
 }
 
-.carousel-item{
+.p-carousel-item{
     height: 550px;
     background: white;
 }
 
-.carousel-item img{
+.p-carousel-item img{
     position: absolute;
     right: 0;
     width: 50%;
 }
 
-.carousel-indicators li {
+.p-carousel-indicators li {
     position: relative;
     width: 13px;
     height: 13px;
@@ -225,7 +225,7 @@ nav ul li:hover {
     background-color: #e3e3e3;
     flex: 0 1 auto;
 }
-.carousel-indicators .active {
+.p-carousel-indicators .active {
     border: 2px solid #cea45f;
 }
 
@@ -237,6 +237,7 @@ nav ul li:hover {
     text-transform: uppercase;
 }
 
+
 .carousel-title p{
     color: #cea45f;
 }
@@ -247,212 +248,212 @@ nav ul li:hover {
     left: 40%;
     transform: translate(-50%,-50%);
 }
-.site-footer
-{
-    background-color: white;
-    padding:45px 0 20px;
-    font-size:15px;
-    line-height:24px;
-    color:#737373;
-}
-.site-footer hr
-{
-    border-top-color:#bbb;
-    opacity:0.5
-}
-.site-footer hr.small
-{
-    margin:20px 0
-}
-.site-footer h6
-{
-    color:#000;
-    font-size:16px;
-    text-transform:uppercase;
-    margin-top:5px;
-    letter-spacing:2px
-}
-.site-footer a
-{
-    color:#737373;
-}
-.site-footer a:hover
-{
-    color:#3366cc;
-    text-decoration:none;
-}
-.footer-links
-{
-    padding-left:0;
-    list-style:none
-}
-.footer-links li
-{
-    display:block
-}
-.footer-links a
-{
-    color:#737373
-}
-.footer-links a:active,.footer-links a:focus,.footer-links a:hover
-{
-    color:#3366cc;
-    text-decoration:none;
-}
-.footer-links.inline li
-{
-    display:inline-block
-}
-.site-footer .social-icons
-{
-    text-align:right
-}
-
-.site-footer .social-icons a
-{
-    width:40px;
-    height:40px;
-    line-height:40px;
-    margin-left:6px;
-    margin-right:0;
-    border-radius:100%;
-    background-color:#33353d
-}
-
-.copyright-text
-{
-    margin:0
-}
-
-@media (max-width:991px)
-{
-    .site-footer [class^=col-]
-    {
-        margin-bottom:30px
-    }
-}
-@media (max-width:767px)
-{
-    .site-footer
-    {
-        padding-bottom:0
-    }
-    .site-footer .copyright-text,.site-footer .social-icons
-    {
-        text-align:center
-    }
-}
-
-.social-icons
-{
-    padding-left:0;
-    margin-bottom:0;
-    list-style:none
-}
-
-.social-icons li
-{
-    display:inline-block;
-    margin-bottom:4px
-}
-
-.social-icons li.title
-{
-    margin-right:15px;
-    text-transform:uppercase;
-    color:#96a2b2;
-    font-weight:700;
-    font-size:13px
-}
-
-.social-icons a{
-    color:#fff;
-    background-color:#29aafe;
-    font-size:16px;
-    display:inline-block;
-    line-height:44px;
-    width:44px;
-    height:44px;
-    text-align:center;
-    margin-right:8px;
-    border-radius:100%;
-    -webkit-transition:all .2s linear;
-    -o-transition:all .2s linear;
-    transition:all .2s linear
-}
-
-.social-icons.size-sm a
-{
-    line-height:34px;
-    height:34px;
-    width:34px;
-    font-size:14px
-}
-
-.social-icons a.facebook
-{
-    background-color:#3b5998
-}
-
-.social-icons a.twitter
-{
-    background-color:#00aced
-}
-
-/*<<<<<<< HEAD*/
-.social-icons a.linkedin
-{
-    background-color:#007bb6
-}
-
-.social-icons a.dribbble
-{
-    background-color:#ea4c89
-}
-
-@media (max-width:767px) {
-    .social-icons li.title {
-        display: block;
-        margin-right: 0;
-        font-weight: 600
-    }
-}
-
-/*=======*/
-/*footer{*/
-/*height: 500px;*/
-/*>>>>>>> 7fadd4cad27ee230f12894447b2c11c0a4347b9e*/
+/*.site-footer*/
+/*{*/
+    /*background-color: white;*/
+    /*padding:45px 0 20px;*/
+    /*font-size:15px;*/
+    /*line-height:24px;*/
+    /*color:#737373;*/
 /*}*/
-@import url(http://weloveiconfonts.com/api/?family=zocial);
+/*.site-footer hr*/
+/*{*/
+    /*border-top-color:#bbb;*/
+    /*opacity:0.5*/
+/*}*/
+/*.site-footer hr.small*/
+/*{*/
+    /*margin:20px 0*/
+/*}*/
+/*.site-footer h6*/
+/*{*/
+    /*color:#000;*/
+    /*font-size:16px;*/
+    /*text-transform:uppercase;*/
+    /*margin-top:5px;*/
+    /*letter-spacing:2px*/
+/*}*/
+/*.site-footer a*/
+/*{*/
+    /*color:#737373;*/
+/*}*/
+/*.site-footer a:hover*/
+/*{*/
+    /*color:#3366cc;*/
+    /*text-decoration:none;*/
+/*}*/
+/*.footer-links*/
+/*{*/
+    /*padding-left:0;*/
+    /*list-style:none*/
+/*}*/
+/*.footer-links li*/
+/*{*/
+    /*display:block*/
+/*}*/
+/*.footer-links a*/
+/*{*/
+    /*color:#737373*/
+/*}*/
+/*.footer-links a:active,.footer-links a:focus,.footer-links a:hover*/
+/*{*/
+    /*color:#3366cc;*/
+    /*text-decoration:none;*/
+/*}*/
+/*.footer-links.inline li*/
+/*{*/
+    /*display:inline-block*/
+/*}*/
+/*.site-footer .social-icons*/
+/*{*/
+    /*text-align:right*/
+/*}*/
 
-* {
-    margin: 0;
-    padding: 0;
-}
-@font-face {
-    font-family: 'zocial', sans-serif;
-}
-[data-icon]:before {
-    font-family: 'zocial';
-    content: attr(data-icon);
-    -webkit-font-smoothing: antialiased;
-}
-body {
-    font-family: 'Verdana', sans-serif;
-}
+/*.site-footer .social-icons a*/
+/*{*/
+    /*width:40px;*/
+    /*height:40px;*/
+    /*line-height:40px;*/
+    /*margin-left:6px;*/
+    /*margin-right:0;*/
+    /*border-radius:100%;*/
+    /*background-color:#33353d*/
+/*}*/
 
-a {
-    text-decoration: none;
+/*.copyright-text*/
+/*{*/
+    /*margin:0*/
+/*}*/
 
-    -webkit-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    -ms-transition: all .2s linear;
-    -o-transition:  all .2s linear;
-    transition: all .2s linear;
-}
-.clear {
-    clear: both;
-}
+/*@media (max-width:991px)*/
+/*{*/
+    /*.site-footer [class^=col-]*/
+    /*{*/
+        /*margin-bottom:30px*/
+    /*}*/
+/*}*/
+/*@media (max-width:767px)*/
+/*{*/
+    /*.site-footer*/
+    /*{*/
+        /*padding-bottom:0*/
+    /*}*/
+    /*.site-footer .copyright-text,.site-footer .social-icons*/
+    /*{*/
+        /*text-align:center*/
+    /*}*/
+/*}*/
+
+/*.social-icons*/
+/*{*/
+    /*padding-left:0;*/
+    /*margin-bottom:0;*/
+    /*list-style:none*/
+/*}*/
+
+/*.social-icons li*/
+/*{*/
+    /*display:inline-block;*/
+    /*margin-bottom:4px*/
+/*}*/
+
+/*.social-icons li.title*/
+/*{*/
+    /*margin-right:15px;*/
+    /*text-transform:uppercase;*/
+    /*color:#96a2b2;*/
+    /*font-weight:700;*/
+    /*font-size:13px*/
+/*}*/
+
+/*.social-icons a{*/
+    /*color:#fff;*/
+    /*background-color:#29aafe;*/
+    /*font-size:16px;*/
+    /*display:inline-block;*/
+    /*line-height:44px;*/
+    /*width:44px;*/
+    /*height:44px;*/
+    /*text-align:center;*/
+    /*margin-right:8px;*/
+    /*border-radius:100%;*/
+    /*-webkit-transition:all .2s linear;*/
+    /*-o-transition:all .2s linear;*/
+    /*transition:all .2s linear*/
+/*}*/
+
+/*.social-icons.size-sm a*/
+/*{*/
+    /*line-height:34px;*/
+    /*height:34px;*/
+    /*width:34px;*/
+    /*font-size:14px*/
+/*}*/
+
+/*.social-icons a.facebook*/
+/*{*/
+    /*background-color:#3b5998*/
+/*}*/
+
+/*.social-icons a.twitter*/
+/*{*/
+    /*background-color:#00aced*/
+/*}*/
+
+/*!*<<<<<<< HEAD*!*/
+/*.social-icons a.linkedin*/
+/*{*/
+    /*background-color:#007bb6*/
+/*}*/
+
+/*.social-icons a.dribbble*/
+/*{*/
+    /*background-color:#ea4c89*/
+/*}*/
+
+/*@media (max-width:767px) {*/
+    /*.social-icons li.title {*/
+        /*display: block;*/
+        /*margin-right: 0;*/
+        /*font-weight: 600*/
+    /*}*/
+/*}*/
+
+/*!*=======*!*/
+/*!*footer{*!*/
+/*!*height: 500px;*!*/
+/*!*>>>>>>> 7fadd4cad27ee230f12894447b2c11c0a4347b9e*!*/
+/*!*}*!*/
+/*@import url(http://weloveiconfonts.com/api/?family=zocial);*/
+
+/** {*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+/*@font-face {*/
+    /*font-family: 'zocial', sans-serif;*/
+/*}*/
+/*[data-icon]:before {*/
+    /*font-family: 'zocial';*/
+    /*content: attr(data-icon);*/
+    /*-webkit-font-smoothing: antialiased;*/
+/*}*/
+/*body {*/
+    /*font-family: 'Verdana', sans-serif;*/
+/*}*/
+
+/*a {*/
+    /*text-decoration: none;*/
+
+    /*-webkit-transition: all .2s linear;*/
+    /*-moz-transition: all .2s linear;*/
+    /*-ms-transition: all .2s linear;*/
+    /*-o-transition:  all .2s linear;*/
+    /*transition: all .2s linear;*/
+/*}*/
+/*.clear {*/
+    /*clear: both;*/
+/*}*/
 
 footer .splitter {
     background-color:navajowhite;
@@ -774,3 +775,4 @@ a.mxh{
 a{
     font-size: 20px;
 }
+

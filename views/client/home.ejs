@@ -156,14 +156,14 @@
 
 <div class="container">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
+        <ol class="carousel-indicators p-carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="carousel-title">
+            <div class="carousel-item p-carousel-item active">
+                <div class="carousel-title p-carousel-title">
                     <div class="carousel-box-title">
                         <p>dolor sit</p>
                         <h1>Lorem ipsum dolor sit amet, consectetur.</h1>
@@ -173,7 +173,7 @@
                 </div>
                 <img class="d-block" src="img/imgdemo1.png" alt="First slide">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item p-carousel-item">
                 <div class="carousel-title">
                     <div class="carousel-box-title">
                         <p>dolor sit</p>
@@ -183,7 +183,7 @@
                 </div>
                 <img class="d-block" src="img/imgdemo2.png" alt="Second slide">
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item p-carousel-item">
                 <div class="carousel-title">
                     <div class="carousel-box-title">
                         <p>dolor sit</p>
@@ -336,14 +336,14 @@
             var arrow = $(".megamenu .megamenu_title span");
             var elm = document.getElementById('checkbox-toggle');
             elm.checked = !elm.checked;
-                if (elm.checked === true){
-                    $('#megamenu').animate({height:'show'})
-                    arrow.html('<i class="fas fa-angle-up"></i>')
-                }else{
-                    $('#megamenu').animate({height:'hide'})
-                    arrow.html('<i class="fas fa-angle-down"></i>')
-                }
-            })
+            if (elm.checked === true){
+                $('#megamenu').animate({height:'show'})
+                arrow.html('<i class="fas fa-angle-up"></i>')
+            }else{
+                $('#megamenu').animate({height:'hide'})
+                arrow.html('<i class="fas fa-angle-down"></i>')
+            }
+        })
 
         $(".item-menu").hover(
             function(){

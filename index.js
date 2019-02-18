@@ -37,7 +37,7 @@ app.get('/',function (req, res) {
 
 
 app.get('/admin',function (req, res) {
-    res.render('admin/home');
+    res.render('admin/index.ejs');
 });
 
 app.listen(post, () => console.log("Chạy thành Công ở cổng " + post));
