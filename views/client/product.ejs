@@ -545,8 +545,7 @@
 </footer>
 <script src="/js/lib/jquery-3.3.1.min.js"></script>
 <script type="text/javascript" src="/js/lib/bootstrap.js"></script>
-<script type="text/javascript" src="/js/lib/popper.min.js"></script>
-<script type="text/javascript" src="/js/lib/mdb.min.js"></script>
+<script src="/js/myjs.js"></script>
 
 <script>
     $(document).ready(function () {
@@ -556,41 +555,7 @@
         });
     });
 </script>
-<script>
-    $(document).ready(function(){
-        $(".megamenu_title").click(function(){
-            var arrow = $(".megamenu .megamenu_title span");
-            var elm = document.getElementById('checkbox-toggle');
-            elm.checked = !elm.checked;
-            if (elm.checked === true){
-                $('#megamenu').animate({height:'show'})
-                arrow.html('<i class="fas fa-angle-up"></i>')
-            }else{
-                $('#megamenu').animate({height:'hide'})
-                arrow.html('<i class="fas fa-angle-down"></i>')
-            }
-        })
 
-        $(".item-menu").hover(
-            function(){
-                $(this).find('.popup').animate({height:'show'},500)
-            }, function(){
-                $(this).find('.popup').css('display','none')
-            });
-
-        $(window).scroll(function () {
-            if ($(this).scrollTop() >= 140) {
-                $('.scroll-nav').css('transform','translateY(100px)');
-            }else{
-                $('.scroll-nav').css('transform','translateY(-100px)');
-            }
-        });
-        // );
-        //     $(".megamenu .megamenu_title span").html('<i class="fas fa-angle-up"></i>')
-        // });
-
-    });
-</script>
 </body>
 </html>
 
