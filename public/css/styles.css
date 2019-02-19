@@ -544,3 +544,7 @@ nav{
 .checked {
     color: orange;
 }
+
+.heigh-cover-parent{
+    height: 100%;
+}
