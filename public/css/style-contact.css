@@ -1,0 +1,54 @@
+.media{
+    display: flex;
+}
+.media-body h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.media-body p{
+    margin-left: 20px;
+    margin-bottom: 15px;
+    color: #545b62;
+    font-size: 17px;
+}
+
+.contact-infor-icon .fa-home{
+    font-size: 33px;
+    margin-top: 8px;
+    color: #005cbf;
+}
+.contact-infor-icon .fa-phone{
+    font-size: 33px;
+    margin-top: 8px;
+    color: #005cbf;
+}
+.contact-infor-icon .fa-envelope{
+    font-size: 33px;
+    margin-top: 8px;
+    color: #005cbf;
+}
+.row .col-lg-5 .form-group input .email{
+    padding-top: 30px;
+}
+.form-contact .form-control{
+    background-color: rgba(130,139,178,.1);
+}
+.button-contact-form{
+    border-color: #005cbf;
+}
+.button-active button:hover{
+    border-color: white  ;
+
+    background-color: #005cbf;
+}
+.contact-infor-boder-top{
+    border-top:1px solid #c8cbcf;
+}
+.error{
+    color: red;
+    font-size: 14px;
+    font-style: italic;
+}

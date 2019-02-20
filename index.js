@@ -1,7 +1,6 @@
 const express = require('express');
 const ejs = require('ejs');
 var bodyParser = require('body-parser');
-var userRouter = require('./routers/users.route.js');
 var mongoose = require('mongoose');
 
 var productRouter = require('./routers/products.route');
@@ -27,7 +26,10 @@ app.use(fileUpload());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
-app.use('/users', userRouter);
+
+app.get('/contact', function (req, res) {
+    res.render('client/contact.ejs')
+});
 
 app.use('/products', productRouter);
 app.use('/admin/products', ad_productRouter);
