@@ -3,10 +3,10 @@ var controller = require('../controllers/admin.product.controller');
 
 var router = express.Router();
 
-// router.get('/', controller.index);
-//
-// router.get('/details', controller.details);
-//
+router.get('/list-products', controller.listProducts);
+
+router.get('/edit', controller.editProducts);
+
 // router.get('/create', controller.create);
 //
 // router.post('/create', controller.postCreate);
