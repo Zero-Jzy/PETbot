@@ -4,12 +4,10 @@ exports.create = function (req, res) {
     res.render('products/create.products.ejs');
 };
 
-exports.index = function (req, res) {
-    // products.find().exec(function (err, products) {
-    //     if(err) console.log('loi cmnr');
-    //     res.render('products/index', {products: products});
-    // });
-    // res.render('client/catagoris.ejs');
+exports.listProducts = function (req, res) {
+    products.find().exec(function (err, products) {
+        res.render('admin/list-products', {products: products});
+    });
 };
 
 exports.postCreate = function (req, res) {
@@ -18,9 +16,9 @@ exports.postCreate = function (req, res) {
     res.redirect('/products')
 };
 
-exports.detail = function (req, res) {
+exports.editProducts = function (req, res) {
     products.findById(req.params.id, function(err, result){
-        res.render('products/details',{product: result});
+        res.render('admin/edits',{product: result});
     });
 };
 
