@@ -38,15 +38,22 @@ nav ul li a{
     color: #131b2b;
     transition: .3s;
     font-weight: 900;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 nav ul li {
-    width: 80px;
     text-align: center;
     border-top: 1px solid transparent;
     transition: .5s;
 
+}
+
+nav ul .active{
+    border-top: 1px solid #4929e0;
+}
+
+nav ul .active a{
+    color: #4929e0;
 }
 
 nav ul li:hover{
