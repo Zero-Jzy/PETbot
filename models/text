@@ -1,0 +1,26 @@
+{
+    "name": "String",
+    images: {
+        "img1":"",
+        "img2":"",
+        "img3":"",
+        "img4":"",
+        }
+    },
+    description: String,
+    unitPrice: String,
+    quantity: String,
+    material: String,
+    color: String,
+    capacity: String,
+    status: String,
+    reviewProduct: String,
+    shape: String,
+    neckSize: String,
+    height: String,
+    diameter: String,
+    weight: String,
+    case: String,
+    productCode: String,
+    productDetail: String
+},
