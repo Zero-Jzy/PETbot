@@ -1,11 +1,12 @@
 var mongoose = require('mongoose');
 
 var products = new mongoose.Schema({
+    productCode: String, // mã sản phẩm
     name: String, // tên sản phẩm
     image: String, // ảnh demo
     images: String, // ảnh chi tiết
     description: String, // mô tả chung
-    unitPrice: String, // đơn giá
+    price: String, // giá
     quantity: String, // số lượng
     material: String, //chất liệu
     color: String, // màu sắc
@@ -18,8 +19,7 @@ var products = new mongoose.Schema({
     diameter: String, // đường kính sản phẩm
     weight: String, // cân nặng sản phẩm
     case: String, // vỏ sản phẩm
-    productCode: String, // mã sản phẩm
-    productDetail: String //  chi tiết về sản phẩm
+
 });
 
 module.exports = mongoose.model('product', products);

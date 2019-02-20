@@ -59,7 +59,7 @@ nav ul li:hover a{
 
 .scroll-nav{
     z-index: 9999;
-    background: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.9);
     position: fixed;
     border-bottom: 1px solid rgba(0,0,0,0.13);
     top: -100px;
@@ -81,8 +81,8 @@ nav ul li:hover a{
     transition: .3s;
 }
 
-.megamenu .megamenu_title:hover{
-    background: #4929e0;
+.megamenu .megamenu_title:hover {
+    background: #2196F3;
 }
 .megamenu .megamenu_title h2{
     margin: 0;
