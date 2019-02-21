@@ -549,4 +549,12 @@ nav{
     height: 100%;
 }
 
-
+nav{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Arvo', serif;
+    font-family: 'Source Serif Pro', serif;
+    font-family: 'Vollkorn', serif;
+    font-family: 'Noticia Text', serif;
+}

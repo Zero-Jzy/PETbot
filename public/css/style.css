@@ -35,7 +35,7 @@ nav ul{
     padding: 0;
 }
 nav ul li a{
-    color: #131b2b;
+    color: #90a1c3;
     transition: .3s;
     font-weight: 900;
     font-size: 14px;
@@ -53,7 +53,7 @@ nav ul .active{
 }
 
 nav ul .active a{
-    color: #4929e0;
+    color: #90a1c3;
 }
 
 nav ul li:hover{
@@ -78,7 +78,7 @@ nav ul li:hover a{
 /*Start Megamenu*/
 .megamenu{
     position: relative;
-    background: #131b2b;
+    background: #90a1c3;
     letter-spacing: .02em;
 }
 
@@ -90,7 +90,7 @@ nav ul li:hover a{
 
 
 .megamenu .megamenu_title:hover {
-    background: #2196F3;
+    background: #6b8bba;
 
 }
 .megamenu .megamenu_title h2{
@@ -100,14 +100,15 @@ nav ul li:hover a{
     text-transform: capitalize;
     font-size: 15px;
     font-weight: 500;
-    letter-spacing: .02em
+    letter-spacing: .02em;
+
 }
 .megamenu .megamenu_title span{
     transform: translateX(5px);
 }
 
 .megamenu-drop{
-    border: 1px solid rgba(255,187,38,0.93);
+    border: 1px solid rgb(144, 161, 195);
     position: absolute;
     width: -webkit-fill-available;
     background-color: white;
@@ -258,7 +259,7 @@ nav ul li:hover a{
 .btn-slide-show{
     color: white;
     padding: 6px 12px;
-    background: #1e1e1e;
+    background: #90a1c3;
     border: none;
     text-transform: uppercase;
 }
@@ -637,4 +638,12 @@ a.mxh{
 .iner-box{
     background: #f1f3f5;
 }
-
+nav{
+    font-family: 'Nunito', sans-serif;
+    font-family: 'PT Serif', serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Arvo', serif;
+    font-family: 'Source Serif Pro', serif;
+    font-family: 'Vollkorn', serif;
+    font-family: 'Noticia Text', serif;
+}
