@@ -1,0 +1,95 @@
+body{
+    background-color: #dff0d8;
+}
+
+li{
+    list-style: none;
+}
+.infor-page{
+    padding-bottom: 50px;
+    border-bottom: 1px solid white;
+}
+.team-information{
+padding-top: 80px;
+}
+.member-img {
+
+    padding-left: 40px;
+    padding-top: 8px;
+}
+.member-img img{
+    width: 160px;
+}
+.member-infor{
+    padding-right: 40px;
+
+}
+i{
+    border-radius: 50%;
+}
+.member-infor .member-name{
+    font-weight: bold;
+    font-size: 17px;
+    color: #005cbf;
+    padding-top: 3px;
+}
+.member-infor .member-name-group{
+    font-size: 13px;
+    color: #5a6268;
+    padding-top: 5px;
+}
+.member-infor .member-link-icons{
+    border-bottom: solid 1px #9F9F9F;
+    padding-bottom: 10px;
+}
+.member-infor .member-details{
+    font-size: 15px;
+    color: #4e555b;
+    padding-top: 5px;
+}
+.team-information{
+    border-bottom: 1px solid white;
+    padding-bottom: 100px;
+}
+
+.video{
+    padding: 0;
+}
+
+.video iframe{
+    width: 100%;
+    height:350px;
+}
+.page-infor{
+    text-align: center;
+    padding-top:110px;
+    font-style: italic;
+    height: 350px;
+}
+
+.infor-body{
+    padding-top:90px;
+}
+.video-image-infor{
+    padding-top: 40px;
+}
+.image-infor img{
+    width: 100%;
+    height:350px;
+}
+
+.img-prize img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.img-prize{
+    padding-top: 50px;
+    padding-left: 80px;
+
+}
+.img-prize-infor{
+    text-align: center;
+    padding-top: 30px;
+}
+
