@@ -76,3 +76,93 @@
 <!--</ul>-->
 <!--</nav></div></div>-->
 <!--</div>-->
+
+<!DOCTYPE html>
+<html>
+<style>
+
+    /*Start Custom-checkbox*/
+    .Custom-checkbox {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    .Custom-checkbox input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 14px;
+        width: 14px;
+        border: 0.5px solid rgba(11,8,6,0.21);
+    }
+
+    .Custom-checkbox:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+
+    .Custom-checkbox input:checked ~ .checkmark {
+        background: #0b93ff;
+    }
+
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    .Custom-checkbox input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    .Custom-checkbox .checkmark:after {
+        left: 5px;
+        top: .8px;
+        width: 3.5px;
+        height: 9px;
+        border: solid #232323;
+        border-width: 0 1.5px 1.5px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    /*End Custom-checkbox*/
+</style>
+<body>
+
+<h1>Custom Checkboxes</h1>
+<label class="Custom-checkbox">One
+    <input type="checkbox" checked="checked">
+    <span class="checkmark"></span>
+</label>
+<label class="Custom-checkbox">Two
+    <input type="checkbox">
+    <span class="checkmark"></span>
+</label>
+<label class="Custom-checkbox">Three
+    <input type="checkbox">
+    <span class="checkmark"></span>
+</label>
+<label class="Custom-checkbox">Four
+    <input type="checkbox">
+    <span class="checkmark"></span>
+</label>
+
+</body>
+</html>
