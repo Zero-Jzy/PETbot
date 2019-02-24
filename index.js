@@ -33,10 +33,6 @@ app.use('/products', productRouter);
 app.use('/admin/products', ad_productRouter);
 app.use('/', otherRouter);
 
-app.get('/contact', function (req, res) {
-    res.render('client/contact.ejs')
-});
-
 app.get('/',function (req, res) {
     res.render('client/home');
 });

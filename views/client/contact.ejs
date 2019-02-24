@@ -271,5 +271,58 @@
 <script src="/js/lib/jquery.validate.min.js"></script>
 <script src="/js/myjs.js"></script>
 
+<script>
+
+    $(document).ready(function () {
+        $("#form-contact").validate({
+            rules: {
+                nameContact: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 40
+                },
+                emailContact: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 50,
+                    email: true
+                },
+                numberPhoneContact: {
+                    required: true,
+                    minlength: 10,
+                    maxlength: 11
+                },
+                messageContact: {
+                    required: true,
+                    minlength: 5,
+                }
+            },
+            messages: {
+                nameContact: {
+                    required: "*Vui lòng nhập họ và tên của bạn.",
+                    minlength: "*Vui lòng nhập đúng họ và tên của bạn.",
+                    maxlength: "*Vui lòng nhập đúng họ và tên của bạn."
+                },
+                emailContact: {
+                    required: "*Vui lòng nhập Email.",
+                    minlength: "*Vui lòng nhập đúng Email.",
+                    maxlength: "*Vui lòng nhập đúng Email",
+                    email: "*Vui lòng nhập đúng định dạng Email."
+                },
+                numberPhoneContact: {
+                    required: "*Vui lòng nhập số điện thoại.",
+                    minlength: "*Vui lòng nhập đúng số điện thoại.",
+                    maxlength: "*Vui lòng nhập đúng số điện thoại."
+                },
+                messageContact: {
+                    required: "*Vui lòng nhập tin nhắn.",
+                    minlength: "*Tin nhắn quá ngắn."
+                }
+            }
+        })
+    });
+
+</script>
+
 </body>
 </html>
