@@ -19,7 +19,6 @@ $(document).ready(function () {
     $(".megamenu_title").click(function () {
         var arrow = $(".megamenu .megamenu_title span");
         var elm = document.getElementById('checkbox-toggle');
-        console.log(elm);
         elm.checked = !elm.checked;
         if (elm.checked === true) {
             $(this).next().animate({height: 'show'});
@@ -40,26 +39,22 @@ $(document).ready(function () {
 
     $(".categories-btn-modal").click(function () {
         if (!$(this).prev().is(":checked")) {
-            console.log('1');
-            $(this).next().animate({height: 'show'}, 300);
-            $(this).html('<i class="fas fa-minus"></i>')
+            $(this).next().animate({height: 'show'}, 300)
+                   .html('<i class="fas fa-minus"></i>')
         } else {
-            console.log('2');
-            $(this).next().animate({height: 'hide'}, 300);
-            $(this).html('<i class="fas fa-plus"></i>')
+            $(this).next().animate({height: 'hide'}, 300)
+                   .html('<i class="fas fa-plus"></i>')
 
         }
     });
 
     $(".categories-btn").click(function () {
         if (!$(this).prev().is(":checked")) {
-            console.log('1');
-            $(this).next().animate({height: 'show'}, 300);
-            $(this).html('<i class="fas fa-minus"></i>')
+            $(this).next().animate({height: 'show'}, 300)
+                   .html('<i class="fas fa-minus"></i>')
         } else {
-            console.log('2');
-            $(this).next().animate({height: 'hide'}, 300);
-            $(this).html('<i class="fas fa-plus"></i>')
+            $(this).next().animate({height: 'hide'}, 300)
+                   .html('<i class="fas fa-plus"></i>')
 
         }
     });
@@ -71,6 +66,16 @@ $(document).ready(function () {
         }, function () {
             $(this).find('.popup').css('display', 'none')
         });
+
+    // $(window).resize(function(){
+    //
+    //     if ($(window).width() <= 768 ){
+    //         $('.title-item-menu i').removeClass('fa-angle-right').addClass('fa-plus')
+    //     }else {
+    //         $('.title-item-menu i').removeClass('fa-plus').addClass('fa-angle-right')
+    //     }
+    //
+    // });
 
     $(window).scroll(function () {
         if ($(this).scrollTop() >= 165) {

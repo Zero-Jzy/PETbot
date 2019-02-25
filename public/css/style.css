@@ -23,45 +23,45 @@ header{
     border-bottom: 1px solid rgba(0,0,0,0.13);
     margin: 25px 0 0 0;
 }
-nav{
+header nav{
     height: 50px;
     line-height: 50px;
 }
 
-nav ul{
+header nav ul{
     display: flex;
     justify-content: space-around;
     list-style: none;
     padding: 0;
 }
-nav ul li a{
-    color: #90a1c3;
+header nav ul li a{
+    color: #1e1e1e;
     transition: .3s;
     font-weight: 900;
     font-size: 14px;
 }
 
-nav ul li {
+header nav ul li {
     text-align: center;
     border-top: 1px solid transparent;
     transition: .5s;
 
 }
 
-nav ul .active{
-    border-top: 1px solid #4929e0;
+header nav ul .active{
+    border-top: 1px solid #2075eb;
 }
 
-nav ul .active a{
-    color: #90a1c3;
+header nav ul .active a{
+    color: #2075eb;
 }
 
-nav ul li:hover{
-    border-top: 1px solid #4929e0;
+header nav ul li:hover{
+    border-top: 1px solid #2075eb;
 }
 
-nav ul li:hover a{
-    color: #4929e0;
+header nav ul li:hover a{
+    color: #2075eb;
 }
 
 .scroll-nav{
@@ -78,7 +78,7 @@ nav ul li:hover a{
 /*Start Megamenu*/
 .megamenu{
     position: relative;
-    background: #90a1c3;
+    background: #1e1e1e;
     letter-spacing: .02em;
 }
 
@@ -90,7 +90,7 @@ nav ul li:hover a{
 
 
 .megamenu .megamenu_title:hover {
-    background: #6b8bba;
+    background: #2075eb;
 
 }
 .megamenu .megamenu_title h2{
@@ -116,10 +116,14 @@ nav ul li:hover a{
     z-index: 5;
 }
 
+.megamenu-drop .item-menu{
+    position: relative;
+    display: flex;
+}
+
 .megamenu-drop .item-menu .popup{
     display: none;
-    width: 400px;
-    height: 100px;
+    min-width: 250px;
 }
 
 .megamenu-drop .item-menu .title-item-menu{
@@ -140,19 +144,40 @@ nav ul li:hover a{
     font-size: 12px;
 }
 
-.megamenu-drop .item-menu .title-item-menu:hover {
-    color: #cea45f;
-    border-bottom: 1px solid #cea45f;
+.megamenu-drop .item-menu > .title-item-menu:hover {
+    color: #2075eb;
+    border-bottom: 1px solid #2075eb;
 }
 
 .megamenu-drop .popup{
-
-    transform: translateX(253px);
+    border: 1px solid rgba(0,0,0,0.2);
+    border-bottom: 3px solid #2075eb;
+    background: white;
+    position: absolute;
+    left: 100%;
 }
 
-.megamenu-drop ul li:hover{
-    color: #cea45f;
-    border-bottom: 1px solid #cea45f;
+.megamenu-drop .popup ul li{
+    cursor: pointer;
+    list-style: none;
+    padding: 10px;
+
+}
+.megamenu-drop .popup ul li a{
+    color: #727272;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 13px;
+
+}
+
+.megamenu-drop .popup ul{
+    padding: 10px;
+    margin: 0;
+}
+
+.megamenu-drop .popup ul li:hover a{
+    color: #2075eb;
 }
 /*End Megamenu*/
 
@@ -203,7 +228,7 @@ nav ul li:hover a{
 .phone-div strong {
     display: block;
     font-size: 18px;
-    color: #2157AE;
+    color: #2075eb;
 }
 .icon-phone{
     float: left;
@@ -274,6 +299,61 @@ nav ul li:hover a{
     left: 40%;
     transform: translate(-50%,-50%);
 }
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+    section .col-md-3{
+        display: none;
+    }
+
+    .toolbar select{
+        padding: 5px 5px;
+    }
+    .breadcrumb{
+        display: none;
+    }
+    .scroll-nav .megamenu{
+        display: none;
+    }
+    .show-style{
+        display: none;
+    }
+    .btn-filter{
+        display: block;
+    }
+    .megamenu-drop .item-menu{
+        display: block;
+    }
+    .megamenu-drop .popup{
+        position: static;
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer .splitter {
     background-color:navajowhite;
@@ -638,12 +718,12 @@ a.mxh{
 .iner-box{
     background: #f1f3f5;
 }
-nav{
-    font-family: 'Nunito', sans-serif;
-    font-family: 'PT Serif', serif;
-    font-family: 'Playfair Display', serif;
-    font-family: 'Arvo', serif;
-    font-family: 'Source Serif Pro', serif;
-    font-family: 'Vollkorn', serif;
-    font-family: 'Noticia Text', serif;
-}
+/*nav{*/
+    /*font-family: 'Nunito', sans-serif;*/
+    /*font-family: 'PT Serif', serif;*/
+    /*font-family: 'Playfair Display', serif;*/
+    /*font-family: 'Arvo', serif;*/
+    /*font-family: 'Source Serif Pro', serif;*/
+    /*font-family: 'Vollkorn', serif;*/
+    /*font-family: 'Noticia Text', serif;*/
+/*}*/
