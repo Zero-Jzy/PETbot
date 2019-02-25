@@ -8,14 +8,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style-about-us.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/style-contact.css">
-    <style>
-        #map{
-            height:400px;
-            width:100%;
-        }
-    </style>
     <title>Document</title>
 </head>
 <body>
@@ -110,8 +104,8 @@
                         <ul>
                             <li class=""><a href="/">Trang chủ</a></li>
                             <li class=""><a href="/products">Sản phẩm</a></li>
-                            <li class=""><a href="/about-us">Về Chúng Tôi</a></li>
-                            <li class="active menu-item-has-children"><a href="/contact">Liên Hệ</a></li>
+                            <li class="active menu-item-has-children"><a href="/about-us">Về Chúng Tôi</a></li>
+                            <li class=""><a href="/contact">Liên Hệ</a></li>
                         </ul>
                     </nav>
 
@@ -171,143 +165,152 @@
     <div class="mybreadcrumb">
         <a href="/">Home</a>
         <span>&gt;</span>
-        <a href="/contact">Contact</a>
+        <a href="/about-us">About Us</a>
     </div>
 </div>
-<div class="container">
-    <div class="row justify-content-center text-center mb-5 mt-5">
+<div class="container infor-page mt-5">
+    <div class="row justify-content-center text-center">
         <div class="col-md-7">
-            <h2 class="font-weight-bold">BẢN ĐỒ</h2>
+        <h3 class="font-weight-bold"> VỀ CHÚNG TÔI</h3>
+            <p class="mt-5">Với hơn 10 năm kinh nghiệm trong việc sản xuất các loại nhựa như PET, PP, PC... Chúng tôi đã đạt được nhiều giải thưởng lớn nhỏ trong sản xuất Với các loại mặt hàng về nhựa như chai, lọ, bình... Điểm mạnh của PETBOT là đa dạng về mẫu mã lẫn chất liệu cộng thêm dây chuyền máy móc sản xuất hiện đại, tiên tiến và được nhiều doanh nghiệp cũng như các công ty lớn tin cậy hợp tác như Coca-Cola, Pepsi, Nestlé...  </p>
+        </div>
+        <div class="mt-5">
+        <img src="/img/img-aboutUs.jpg " alt="">
         </div>
     </div>
-    <iframe width="100%" height="500px"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.096707985379!2d105.77964481486173!3d21.028816135998333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abbfa96f309f%3A0x7917af0f83effe1b!2sFPT+University+Hanoi!5e0!3m2!1sen!2s!4v1546974348745"
-            class=" map" frameborder="0" style="border:0" allowfullscreen></iframe>
-    <div class="row justify-content-center text-center mb-5 mt-5  contact-infor-boder-top">
+</div>
+<div class="container team-information mt-5">
+    <div class="row justify-content-center text-center">
         <div class="col-md-7">
-            <h2 class="font-weight-bold mt-5">LIÊN HỆ VỚI CHÚNG TÔI</h2>
-            <p class="mt-4">Nếu bạn cần hỗ trợ thì dưới đây là những thông tin cần thiết dành cho bạn, hãy liên hệ với
-                chúng tôi nếu bạn gặp bất cứ thắc mắc hay khó khăn gì với sản phẩm, chức năng hay bất kỳ điều gì trên
-                website này.</p>
+            <h3 class="font-weight-bold">THÀNH VIÊN</h3>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-4 col-lg-3 mb-5 mb-md-0">
-            <div class="media contact-infor">
-                <span class="contact-infor-icon">
-                   <i class="fas fa-home"></i>
-                </span>
-                <div class="media-body">
-                    <h3>Địa chỉ</h3>
-                    <p> Mỹ Đình, Hà Nội</p>
-                </div>
-            </div>
-            <div class="media contact-infor">
-                <span class="contact-infor-icon">
-                   <i class="fas fa-phone"></i>
-                </span>
-                <div class="media-body">
-                    <h3>Điện thoại</h3>
-                    <p>+09999999</p>
-                </div>
-            </div>
-            <div class="media contact-infor">
-                <span class="contact-infor-icon">
-                  <i class="fas fa-envelope"></i>
-                </span>
-                <div class="media-body">
-                    <h3>Email</h3>
-                    <p>petbot@gmail.com</p>
-                </div>
-            </div>
+    <div class="row mt-5">
+        <div class="col-md-2 col-12 d-flex justify-content-center align-items-center member-img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/AVATAR-FB.jpg/480px-AVATAR-FB.jpg" class="rounded-circle" alt="Cinque Terre" >
         </div>
-        <div class="col-md-8 col-lg-9">
-            <form action="#" id="form-contact" class="form-contact" method="post">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="form-group">
-                            <input type="text" class="form-control " name="nameContact"
-                                   placeholder="Nhập họ và tên của bạn.">
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control mt-4" name="emailContact"
-                                   placeholder="Nhập email của bạn.">
-                        </div>
-                        <div class="form-group">
-                            <input type="number" class="form-control mt-4" name="numberPhoneContact"
-                                   placeholder="Nhập số điện thoại của bạn.">
-                        </div>
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="form-group">
-                            <textarea class="form-control w-100" name="messageContact" id="message" cols="30" rows="6"
-                                      placeholder="Nhập tin nhắn."></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group text-center text-md-right button-active">
-                    <button type="submit" value="submit" class=" btn btn-outline-dark button-contact-form">Gửi</button>
-                </div>
-            </form>
+        <div class="col-md-4 col-12 d-flex member-infor mt-4">
+            <ul >
+                <li class="member-name">Dương Quang Phú</li>
+                <li class="mt-2 member-name-group">Nhóm trưởng</li>
+                <li class="mt-2 member-link-icons"><a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-skype"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </li>
+                <li class="mt-2 member-details">Với vị trí là nhóm trưởng Phú luôn là người có tinh thần, trách nhiệm rất cao trong project kỳ I lần này.</li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-12 d-flex justify-content-center align-items-center member-img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/AVATAR-FB.jpg/480px-AVATAR-FB.jpg" class="rounded-circle" alt="Cinque Terre" >
+        </div>
+        <div class="col-md-4 col-12 d-flex member-infor mt-4">
+            <ul>
+                <li class="member-name">Nguyễn Thị Ngọc Ánh</li>
+                <li class="mt-2 member-name-group">Thành viên</li>
+                <li class="mt-2 member-link-icons"><a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-skype"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </li>
+                <li class="mt-2 member-details">Là con gái duy nhất trong nhóm Ánh luôn tự tin vì mình là người xinh nhất nhóm.</li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-12 d-flex justify-content-center align-items-center mt-5 member-img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/AVATAR-FB.jpg/480px-AVATAR-FB.jpg" class="rounded-circle" alt="Cinque Terre">
+        </div>
+        <div class="col-md-4 col-12 d-flex mt-5 member-infor">
+            <ul class="mt-4">
+                <li class="member-name">Hồ Quang Khải</li>
+                <li class="mt-2 member-name-group">Thành viên</li>
+                <li class="mt-2 member-link-icons"><a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-skype"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </li>
+                <li class="mt-2 member-details"></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-12 d-flex justify-content-center align-items-center mt-5 member-img">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/AVATAR-FB.jpg/480px-AVATAR-FB.jpg" class="rounded-circle" alt="Cinque Terre">
+        </div>
+        <div class="col-md-4 col-12 d-flex mt-5 member-infor">
+            <ul class="mt-4">
+                <li class="member-name">Lương Anh Ngọc</li>
+                <li class="mt-2 member-name-group">Thành viên</li>
+                <li class="mt-2 social-icons member-link-icons"><a class="facebook" href="#" ><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-skype"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </li>
+                <li class="mt-2 member-details">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</li>
+            </ul>
+        </div>
+        </div>
+</div>
+
+<div class="container infor-body">
+    <div class="row justify-content-center text-center mt-5">
+        <div class="col-md-7">
+            <h3 class="font-weight-bold">DÂY CHUYỀN SẢN XUẤT HIỆN ĐẠI VÀ CHẤT LƯỢNG</h3>
         </div>
     </div>
+    <div class="row mt-5 video-image-infor">
+        <div class="col-6 video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pJW6IKRLSyk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="col-6 page-infor">Với quy trình và máy móc sản xuất hiện đại chúng tôi vẫn luôn kiểm tra và đánh giá kỹ lưỡng vào việc làm sao để đưa ra thị trường những sản phẩm chất lượng nhất.</div>
+    </div>
+</div>
+<div class="container infor-body">
+<div class="row justify-content-center text-center mt-5">
+    <div class="col-md-7">
+        <h3 class="font-weight-bold">CHẤT LƯỢNG BỀN BỈ VÀ SẢN PHẨM ĐA DẠNG</h3>
+    </div>
+</div>
+<div class="row mt-5 video-image-infor ">
+    <div class="col-6 page-infor">Với chất liệu nhựa như PET, PP, PC... có chất lượng rất bền bỉ kèm theo đó là rất nhiều mẫu mã sản phẩm đa dạng về kiểu dáng lẫn dung tích.</div>
+
+    <div class="col-6 image-infor">
+        <img src="/img/nhuavn2.jpg" alt="">
+    </div>
+</div>
+</div>
+<div class="container infor-body">
+    <div class="row justify-content-center text-center mt-5">
+        <div class="col-md-7">
+            <h3 class="font-weight-bold">GIÁ CẢ HỢP LÝ VÀ UY TÍN</h3>
+        </div>
+    </div>
+    <div class="row mt-5 video-image-infor ">
+        <div class="col-6 image-infor">
+            <img src="/img/nhuavn.jpg" alt="">
+        </div>
+        <div class="col-6 page-infor">Giá của những sản phẩm của chúng tôi hết sức hợp lý và luôn cạnh tranh với những công ty về chai lọ nhựa khác và một điều hết sức quan trọng nữa là uy tín của công ty PETBOT và sự hài lòng của bạn khi mua hay sử dụng sản phẩm của chúng tôi.</div>
+
+    </div>
+</div>
+<div class="container infor-body">
+    <div class="row justify-content-center text-center mt-5">
+        <div class="col-md-7">
+            <h3 class="font-weight-bold">CÁC GIẢI THƯỞNG VÀ DANH HIỆU ĐẠT ĐƯỢC</h3>
+        </div>
+    </div>
+        <div class="row mt-5 img-prize ">
+            <div class="col-md-3 ">
+                <img src="/img/cuptieubieu.jpg" alt="">
+            </div>
+            <div class="col-md-3 ">
+                <img src="/img/cupbenvung.jpg" alt="">
+            </div>
+            <div class="col-md-3 ">
+                <img src="/img/HVNCLC.jpg" alt="">
+            </div>
+            <div class="col-md-3 ">
+                <img src="/img/cup-THBV.jpg" alt="">
+            </div>
+        </div>
+    <div class="col-12 img-prize-infor mt-5 mb-5">Qua nhiều năm sản xuất và kinh doanh trong nghành sản xuất lẫn kinh doanh về chai, lọ, bình nhựa... PETBOT đã đạt được nhiều thành tựu và giải thưởng to lớn và giá trị như: <i>cup doanh nghiệp tiêu biểu, cup doanh nghiệp bền vững, hàng Việt Nam chất lượng cao, thương hiệu bền vững và uy tín... </i>ngoài ra còn rất nhiều những giải thưởng lớn nhỏ mà PETBOT đã đang và sẽ cố gắng đạt được để trở thành một doanh nghiệp mạnh vươn tầm thế giới.</div>
+
 </div>
 <script src="/js/lib/jquery-3.3.1.min.js"></script>
-<script src="/js/lib/jquery.validate.min.js"></script>
+<script src="/js/lib/bootstrap.min.js"></script>
 <script src="/js/myjs.js"></script>
-
-<script>
-
-    $(document).ready(function () {
-        $("#form-contact").validate({
-            rules: {
-                nameContact: {
-                    required: true,
-                    minlength: 2,
-                    maxlength: 40
-                },
-                emailContact: {
-                    required: true,
-                    minlength: 2,
-                    maxlength: 50,
-                    email: true
-                },
-                numberPhoneContact: {
-                    required: true,
-                    minlength: 10,
-                    maxlength: 11
-                },
-                messageContact: {
-                    required: true,
-                    minlength: 5,
-                }
-            },
-            messages: {
-                nameContact: {
-                    required: "*Vui lòng nhập họ và tên của bạn.",
-                    minlength: "*Vui lòng nhập đúng họ và tên của bạn.",
-                    maxlength: "*Vui lòng nhập đúng họ và tên của bạn."
-                },
-                emailContact: {
-                    required: "*Vui lòng nhập Email.",
-                    minlength: "*Vui lòng nhập đúng Email.",
-                    maxlength: "*Vui lòng nhập đúng Email",
-                    email: "*Vui lòng nhập đúng định dạng Email."
-                },
-                numberPhoneContact: {
-                    required: "*Vui lòng nhập số điện thoại.",
-                    minlength: "*Vui lòng nhập đúng số điện thoại.",
-                    maxlength: "*Vui lòng nhập đúng số điện thoại."
-                },
-                messageContact: {
-                    required: "*Vui lòng nhập tin nhắn.",
-                    minlength: "*Tin nhắn quá ngắn."
-                }
-            }
-        })
-    });
-
-</script>
-
 </body>
 </html>
