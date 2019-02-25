@@ -38,11 +38,16 @@ aside h5{
     font-weight: 500;
     color: #1e1e1e;
     text-transform: capitalize!important;
-    margin-bottom: 10px
+    position: relative;
+    display: block;
 }
 aside ul{
     padding: 0;
     margin-bottom: 0;
+}
+
+aside .categories-btn{
+    padding: 0 10px;
 }
 
 aside .categories > ul > li{
@@ -286,37 +291,98 @@ card
     font-size: 14px;
     margin-bottom: 20px;
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
     font-weight: 300;
 }
+
+.card a{
+    display: block;
+    position: relative;
+}
+
 .card button:hover{
     color: white;
     background-color: #cea45f;
     border-color: #cea45f;
 }
+
 .card-title a{
     font-size: 22px;
     color: #1e1e1e;
 }
-.card-title a:hover{
+
+.card-body{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/*.card-title a:hover{*/
+    /*color: white;*/
+    /*color: #cea45f;*/
+/*}*/
+
+/*.card-text{*/
+    /*font-size: 15px;*/
+    /*color: #1e1e1e;*/
+/*}*/
+
+/*.card button{*/
+    /*border-color: #cea45f;*/
+/*}*/
+
+/*.center a{*/
+    /*color: #cea45f;*/
+/*}*/
+
+/*.center a:hover{*/
+    /*background-color: #cea45f;*/
+    /*color: white;*/
+/*}*/
+
+
+.card ul li{
+    display: block;
+    position: absolute;
+    font-size: 12px;
     color: white;
-    color: #cea45f;
+    min-width: 50px;
+    padding: 2px 2px;
+    text-align: center;
+    left: 10px;
+
 }
-.card-text{
-    font-size: 15px;
-    color: #1e1e1e;
+
+.card ul .material-title{
+    background: #1e1e1e;
+    top: 15px;
 }
-.card button{
-    border-color: #cea45f;
+
+.card ul .capacity-title{
+    background: #2075eb;
+    top: 45px;
 }
-.center a{
-    color: #cea45f;
+
+.card .btn-details-products{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px 10px;
+    background-color: rgba(0,0,0,0.3);
+    color: #ffffff
 }
-.center a:hover{
-    background-color: #cea45f;
-    color: white;
+
+.card:hover .btn-details-products {
+    display: block;
 }
+
+.card .price{
+    color: red;
+}
+
+
+
 
 
 
@@ -330,28 +396,3 @@ aside .categories > ul > li:last-child{
 /*_______________________________*/
 
 
-@media only screen and (max-width: 768px) {
-
-    section .col-md-3{
-        display: none;
-    }
-
-    .toolbar select{
-        padding: 5px 5px;
-    }
-    .breadcrumb{
-        display: none;
-    }
-    .scroll-nav .megamenu{
-        display: none;
-    }
-    .show-style{
-        display: none;
-    }
-    .btn-filter{
-        display: block;
-    }
-    /*body {*/
-        /*background-color: lightblue;*/
-    /*}*/
-}
