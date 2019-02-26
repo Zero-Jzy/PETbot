@@ -856,22 +856,20 @@
                                 <th>Ảnh</th>
                                 <th>Tên</th>
                                 <th>Giá</th>
-                                <th>Product sales</th>
-                                <th>Stock</th>
-                                <th>Price</th>
+                                <th>Category</th>
+                                <th>Chất Liệu</th>
+                                <th>Tình Trạng</th>
                                 <th>Setting</th>
                             </tr>
                             <% products.forEach(function (product) {%>
                                 <tr>
-                                    <td><img src="/jeweler/img/new-product/5-small.jpg" alt="" /></td>
-                                    <td>Jewelery Title 1</td>
-                                    <td>
-                                        <button class="pd-setting">Active</button>
-                                    </td>
-                                    <td>50</td>
-                                    <td>$750</td>
-                                    <td>Out Of Stock</td>
-                                    <td>$15</td>
+                                    <td><%= product.productCode%></td>
+                                    <td><img src="<%= product.images[1]%>" alt="" /></td>
+                                    <td><%= product.name%></td>
+                                    <td><%= product.price%></td>
+                                    <td><%= product.category%></td>
+                                    <td><%= product.material%></td>
+                                    <td><%= product.status%></td>
                                     <td>
                                         <button data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></button>
                                         <button data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></button>
