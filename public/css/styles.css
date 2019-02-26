@@ -81,6 +81,8 @@ bottom là khoảng cách từ thằng element này đến border-bottom(cạnh 
     width: 60px;
     height: 60px;
     text-indent: inherit;
+    margin-right: 4%;
+
 }
 /*đây là kích cỡ khi ảnh được active*/
 .my-carousel-indicators .active{
