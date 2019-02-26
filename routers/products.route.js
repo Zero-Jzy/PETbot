@@ -6,7 +6,7 @@ var router = express.Router();
 
 router.get('/', controller.categories);
 
-router.get('/details', controller.details);
+// router.get('/details', controller.details);
 
 router.get('/:id', controller.detail);
 
