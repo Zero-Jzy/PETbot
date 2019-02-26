@@ -1,18 +1,30 @@
 var products = require('../models/model.product');
 
-exports.categories= function (req, res) {
-    products.find().exec(function (err, products) {
-        if(err){
-            console.log("Không lấy được dữ liệu products!!")
-            return;
-        }
-        res.render('client/categories.ejs', {products: products});
+exports.create = function (req, res) {
+    res.render('products/create.products.ejs');
+};
 
-    });
+exports.index = function (req, res) {
+    // products.find().exec(function (err, products) {
+    //     if(err) console.log('loi cmnr');
+    //     res.render('products/index', {products: products});
+    // });
+    res.render('client/categories.ejs');
 };
 
 exports.details = function (req, res) {
+    // products.find().exec(function (err, products) {
+    //     if(err) console.log('loi cmnr');
+    //     res.render('products/index', {products: products});
+    // });
+
     res.render('client/product');
+};
+
+exports.postCreate = function (req, res) {
+    products.create(req.body);
+    console.log(req.body);
+    res.redirect('/products')
 };
 
 exports.detail = function (req, res) {
@@ -20,7 +32,6 @@ exports.detail = function (req, res) {
         res.render('client/product',{product: result});
     });
 };
-
 
 exports.update = function (req, res) {
     console.log(req.body);
