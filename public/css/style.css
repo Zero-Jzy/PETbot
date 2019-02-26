@@ -614,9 +614,9 @@ footer .splitter {
     /*font-size: 20px;*/
 /*}*/
 
-uc
-=======
->>>>>>> 1708171debf687afb283d68c2e0bee5163a83987
+/*uc*/
+/*=======*/
+/*>>>>>>> 1708171debf687afb283d68c2e0bee5163a83987*/
 .box1 .top{
     margin-bottom: 20px;
 }
@@ -670,11 +670,13 @@ uc
     font-size: 18px;
     text-transform: uppercase;
     margin-bottom: 9px;
+    margin-left: 20px;
 }
 .footer-top-left .block-bottom p {
     color: #646464;
     font-size: 18px;
     margin-bottom: 0px;
+    margin-left: 20px;
 }
 .footer-top-left .connect-face p {
     font-size: 16px;
@@ -707,6 +709,7 @@ uc
     font-weight: 400;
     padding-bottom: 11px;
     margin-left:20px;
+    width: 100px;
 }
 .fotter-contact p {
     color: #646464;
@@ -731,7 +734,7 @@ uc
     padding-right: 15px;
 }
 #footer .column ul li {
-
+width: 100px;
 }
 #footer .column a {
     color: #646464;
@@ -759,6 +762,7 @@ uc
     padding: 5px;
     display: grid;
     font-size: 20px;
+    margin-left: 20px;
 }
 .footer a:hover, .footer a:active {
     color: #d7edfc;
@@ -883,25 +887,25 @@ border-left: none;
         text-align: center;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .footer-top-left{
         width: 100%;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .fotter-contact{
         width: 50%;
         height:auto;
         border-left: none;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
     .three columns column{
         width: 60%;
         height: auto;
     }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:650px) {
     #copyright, h3{
         text-align: center;
     }
