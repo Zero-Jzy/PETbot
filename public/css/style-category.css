@@ -381,11 +381,6 @@ card
     color: red;
 }
 
-
-
-
-
-
 /*_______________________________*/
 
 aside .categories > ul > li:last-child{
@@ -396,3 +391,9 @@ aside .categories > ul > li:last-child{
 /*_______________________________*/
 
 
+.card div{
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

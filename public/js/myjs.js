@@ -1,3 +1,5 @@
+
+
 function deleteProduct(id) {
     $.ajax({
         url: 'https://appcuatuine.herokuapp.com/products/' + id,
@@ -73,10 +75,19 @@ $(document).ready(function () {
         if ($(window).width() <= 768 ){
             $('.title-item-menu i').removeClass('fa-angle-right').addClass('fa-plus');
             $('#megamenu > div').removeClass('item-menu-hover');
+            var cw = $('.img-products').width();
+            $('.img-products').css({
+                'height': cw + 'px'
+            });
         }else {
             $('.title-item-menu i').removeClass('fa-plus').addClass('fa-angle-right');
             $('#megamenu > div').addClass('item-menu-hover');
         }
+        var cw = $('.img-products').width();
+        $('.img-products').css({
+            'height': cw + 'px'
+        });
+
     });
 
     $(".item-menu-hover").hover(
@@ -92,10 +103,17 @@ $(document).ready(function () {
         } else {
             $('.scroll-nav').css('transform', 'translateY(-100px)');
         }
+
     });
     function myFunction() {
         alert('asdkaksdj')
     }
+
+    var cw = $('.img-products').width();
+    $('.img-products').css({
+        'height': cw + 'px'
+    });
+
 
 
 
