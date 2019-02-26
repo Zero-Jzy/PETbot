@@ -2,7 +2,6 @@
 
 .breadcrumb{
     background: #f1f3f5;
-    margin-bottom: 30px;
 }
 
 .mybreadcrumb{
@@ -39,11 +38,16 @@ aside h5{
     font-weight: 500;
     color: #1e1e1e;
     text-transform: capitalize!important;
-    margin-bottom: 10px
+    position: relative;
+    display: block;
 }
 aside ul{
     padding: 0;
     margin-bottom: 0;
+}
+
+aside .categories-btn{
+    padding: 0 10px;
 }
 
 aside .categories > ul > li{
@@ -84,7 +88,7 @@ aside ul > li:hover >label{
 }
 
 .filter ul li{
-    padding: 10px;
+    padding: 5px;
     font-size: 14px;
 }
 
@@ -130,14 +134,64 @@ input[type="number"]{
 }
 
 
+/*Start Custom-checkbox*/
+.Custom-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.Custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    border: 0.5px solid rgba(0,0,0,0.46);
+}
+
+.Custom-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.Custom-checkbox input:checked ~ .checkmark {
+    background: #0b93ff;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.Custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.Custom-checkbox .checkmark:after {
+    left: 5px;
+    top: .8px;
+    width: 3.5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg);
+}
+
+/*End Custom-checkbox*/
 
 
-/*?*/
-
-/*.baner-prs{*/
-/*height: 250px;*/
-/*background-color: #0b2a41;*/
-/*}*/
 
 
 .toolbar{
@@ -150,13 +204,15 @@ input[type="number"]{
     padding: 0 10px;
     font-size: 20px;
     color: rgba(0,0,0,0.28);
+    cursor: pointer;
+
 }
 .toolbar ul .active{
-    color: #000;
+    color: rgba(0,0,0,0.8);
 }
 
 .toolbar ul li:active{
-    color: #000;
+    color: rgba(0,0,0,0.8);
 }
 
 .toolbar select{
@@ -168,6 +224,15 @@ input[type="number"]{
     color: #1e1e1e;
 
 }
+
+.btn-filter{
+    display: none;
+}
+
+.btn-filter i{
+    font-size: 13px;
+}
+
 a{
     text-decoration: none;
 }
@@ -226,38 +291,95 @@ card
     font-size: 14px;
     margin-bottom: 20px;
     white-space: nowrap;
-    overflow: hidden;
     text-overflow: ellipsis;
     font-weight: 300;
 }
+
+.card a{
+    display: block;
+    position: relative;
+}
+
 .card button:hover{
     color: white;
     background-color: #cea45f;
     border-color: #cea45f;
 }
+
 .card-title a{
     font-size: 22px;
     color: #1e1e1e;
 }
-.card-title a:hover{
-    color: white;
-    color: #cea45f;
-}
-.card-text{
-    font-size: 15px;
-    color: #1e1e1e;
-}
-.card button{
-    border-color: #cea45f;
-}
-.center a{
-    color: #cea45f;
-}
-.center a:hover{
-    background-color: #cea45f;
-    color: white;
+
+.card-body{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
+/*.card-title a:hover{*/
+    /*color: white;*/
+    /*color: #cea45f;*/
+/*}*/
+
+/*.card-text{*/
+    /*font-size: 15px;*/
+    /*color: #1e1e1e;*/
+/*}*/
+
+/*.card button{*/
+    /*border-color: #cea45f;*/
+/*}*/
+
+/*.center a{*/
+    /*color: #cea45f;*/
+/*}*/
+
+/*.center a:hover{*/
+    /*background-color: #cea45f;*/
+    /*color: white;*/
+/*}*/
+
+
+.card ul li{
+    display: block;
+    position: absolute;
+    font-size: 12px;
+    color: white;
+    min-width: 50px;
+    padding: 2px 2px;
+    text-align: center;
+    left: 10px;
+
+}
+
+.card ul .material-title{
+    background: #1e1e1e;
+    top: 15px;
+}
+
+.card ul .capacity-title{
+    background: #2075eb;
+    top: 45px;
+}
+
+.card .btn-details-products{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 5px 10px;
+    background-color: rgba(0,0,0,0.3);
+    color: #ffffff
+}
+
+.card:hover .btn-details-products {
+    display: block;
+}
+
+.card .price{
+    color: red;
+}
 
 /*_______________________________*/
 
@@ -267,3 +389,11 @@ aside .categories > ul > li:last-child{
 }
 
 /*_______________________________*/
+
+
+.card div{
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

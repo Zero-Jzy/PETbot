@@ -13,7 +13,7 @@ var cloudinary = require('cloudinary');
 mongoose.connect('mongodb://chailo:chailo123@ds163014.mlab.com:63014/mydb', { useNewUrlParser: true });
 
 const app = express();
-var post = 3000;
+var post = 3009;
 
 cloudinary.config({
     cloud_name: 'aptechaaa',
@@ -32,10 +32,6 @@ app.use(express.static('public'));
 app.use('/products', productRouter);
 app.use('/admin/products', ad_productRouter);
 app.use('/', otherRouter);
-
-app.get('/contact', function (req, res) {
-    res.render('client/contact.ejs')
-});
 
 app.get('/',function (req, res) {
     res.render('client/home');
