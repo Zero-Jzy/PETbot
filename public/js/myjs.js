@@ -1,20 +1,22 @@
 
 
 function deleteProduct(id) {
-    $.ajax({
-        url: 'https://appcuatuine.herokuapp.com/products/' + id,
-        type: 'DELETE',
-        data: {"_id": id},
-        success: function (response) {
-            alert('Success.');
-            location.href = '/products';
-        },
-        error: function (response, message) {
-            alert('Error. ' + message);
-            location.href = '/products';
-            console.log(response);
-        }
-    });
+    if(confirm('Bạn có muốn xóa sản phẩm?')) {
+        $.ajax({
+            url: 'http://localhost:3009/admin/products/list-products/' + id,
+            type: 'DELETE',
+            data: {"_id": id},
+            success: function (response) {
+                alert('Xóa Thành Công.');
+                location.href = '/admin/products/list-products';
+            },
+            error: function (response, message) {
+                alert('Error. ' + message);
+                location.href = '/admin/products/list-products';
+                console.log(response);
+            }
+        });
+    }
 }
 
 $(document).ready(function () {

@@ -17,7 +17,7 @@ exports.details = function (req, res) {
 
 exports.detail = function (req, res) {
     products.findById(req.params.id, function(err, result){
-        res.render('products/details',{product: result});
+        res.render('client/product',{product: result});
     });
 };
 

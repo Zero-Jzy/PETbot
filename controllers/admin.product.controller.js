@@ -1,9 +1,6 @@
 var products = require('../models/model.product');
 var cloudinary = require('cloudinary');
 
-exports.create = function (req, res) {
-    res.render('products/create.products.ejs');
-};
 
 exports.listProducts = function (req, res) {
     products.find().exec(function (err, products) {
@@ -11,17 +8,16 @@ exports.listProducts = function (req, res) {
     });
 };
 
-exports.postCreate = function (req, res) {
-    products.create(req.body);
-    console.log(req.body);
-    res.redirect('/products')
+exports.addProducts = function (req, res) {
+    res.render('admin/edits');
 };
 
 exports.editProducts = function (req, res) {
     products.findById(req.params.id, function (err, result) {
-        res.render('admin/edits', {product: result});
+        res.render('admin/edit-product', {product: result});
     });
 };
+
 
 exports.postEditProducts = function (req, res) {
 
@@ -77,8 +73,11 @@ exports.update = function (req, res) {
         if (err) {
             console.log("Can't update product !!");
             return
+        }else {
+            console.log('Update thanh cong')
         }
-        res.redirect('/products')
+
+        res.redirect('/admin/products/list-products')
     });
 };
 

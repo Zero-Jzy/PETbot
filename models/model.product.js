@@ -16,7 +16,19 @@ var products = new mongoose.Schema({
     diameter: String, // đường kính sản phẩm
     weight: String, // cân nặng sản phẩm
     case: String, // vỏ sản phẩm
-    status: String, // tình trạng hàng
+    status: {
+        type: Number,
+        default: 1
+    },// tình trạng hàng
+    createdAt: {
+        type: Date,
+        default: Date.now
+    },
+    updatedAt: {
+        type: Date,
+        default: Date.now
+    },
+
 
 });
 

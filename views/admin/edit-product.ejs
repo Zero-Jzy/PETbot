@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Product List | jeweler - Material Admin Template</title>
+    <title>Product Edit | jeweler - Material Admin Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
 		============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/jeweler/img/favicon.ico">
     <!-- Google Fonts
 		============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
@@ -59,6 +59,7 @@
     <!-- modernizr JS
 		============================================ -->
     <script src="/jeweler/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="/js/lib/angular.min.js"></script>
 </head>
 
 <body>
@@ -830,7 +831,7 @@
                                     <ul class="breadcome-menu">
                                         <li><a href="#">Home</a> <span class="bread-slash">/</span>
                                         </li>
-                                        <li><span class="bread-blod">Product List</span>
+                                        <li><span class="bread-blod">Product Edit</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -841,53 +842,127 @@
             </div>
         </div>
     </div>
-    <div class="product-status mg-tb-15">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="product-status-wrap">
-                        <h4>Products List</h4>
-                        <div class="add-product">
-                            <a href="/admin/products/edit">Add Product</a>
-                        </div>
-                        <table>
-                            <tr>
-                                <th>ID</th>
-                                <th>Ảnh</th>
-                                <th>Tên</th>
-                                <th>Giá</th>
-                                <th>Category</th>
-                                <th>Chất Liệu</th>
-                                <th>Tình Trạng</th>
-                                <th>Setting</th>
-                            </tr>
-                            <% products.forEach(function (product) {%>
-                                <tr>
-                                    <td><%= product.productCode%></td>
-                                    <td><img src="<%= product.images[0]%>" alt="" /></td>
-                                    <td><%= product.name%></td>
-                                    <td><%= product.price%></td>
-                                    <td><%= product.category%></td>
-                                    <td><%= product.material%></td>
-                                    <td><%= product.status%></td>
-                                    <td>
-                                        <a href="/admin/products/edit/<%= product._id%>" data-toggle="tooltip" title="Edit" class="pd-setting-ed"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
-                                        <a onclick="deleteProduct('<%= product._id%>')" data-toggle="tooltip" title="Trash" class="pd-setting-ed"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
-                                    </td>
-                                </tr>
-                            <%});%>
+    <!-- Single pro tab start-->
+    <div class="single-product-tab-area mg-tb-15">
+        <!-- Single pro tab review Start-->
+        <div class="single-pro-review-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="review-tab-pro-inner">
+                            <ul id="myTab3" class="tab-review-design">
+                                <li class="active"><a href="#description"><i class="fa fa-pencil" aria-hidden="true"></i> Product Edit</a></li>
+                                <li><a href="#reviews"><i class="fa fa-file-image-o" aria-hidden="true"></i> Pictures</a></li>
+                                <li><a href="#INFORMATION"><i class="fa fa-commenting" aria-hidden="true"></i> Review</a></li>
+                            </ul>
+                            <div id="myTabContent" class="tab-content custom-product-edit">
+                                <div ng-app="myApp"  ng-controller="myCtrl" class="product-tab-list tab-pane fade active in" id="description">
+                                    <form action="" method="post" enctype="multipart/form-data">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <div class="review-content-section">
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                                        <input type="text" value="<%= product.productCode%>" class="form-control" placeholder="Id" name="productCode">
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"><i class="fa fa-pencil" aria-hidden="true"></i></span>
+                                                        <input type="text" value="<%= product.name%>" class="form-control" placeholder="Tên sản phẩm" name="name">
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"><i class="fa fa-usd" aria-hidden="true"></i></span>
+                                                        <input type="text" value="<%= product.price%>" class="form-control" placeholder="Price" name="price">
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"><i class="fa fa-sticky-note-o" aria-hidden="true"></i></span>
+                                                        <input type="file" value="<%= product.images[1]%>" multiple class="form-control" placeholder="Ảnh" name="images">
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"><i class="fa fa-ticket" aria-hidden="true"></i></span>
+                                                        <input type="text" value="<%= product.description%>" class="form-control" placeholder="Miêu Tả">
+                                                    </div>
+                                                    <select name="loaisanpham" ng-model="loaisanpham" ng-change="showSelectValue1(loaisanpham)" class="form-control pro-edt-select form-control-primary">
+                                                        <option value="">Loại sản phẩm</option>
+                                                        <option value="chaiNhua">Chai Nhựa</option>
+                                                        <option value="loNhua">Lọ Nhưa</option>
+                                                        <option value="binhNhua">Bình Nhựa</option>
+                                                    </select>
+                                                    <select style="margin-top: 15px" name="congDung" ng-model="congDung" ng-change="congdungfunction(congDung)" class="form-control pro-edt-select form-control-primary">
+                                                        <option value="">Công dụng</option>
+                                                        <option ng-repeat="option in congDung " value="{{option.value}}">{{option.name}}</option>
+                                                    </select>
+                                                    <select style="margin-top: 15px" name="material" class="form-control pro-edt-select form-control-primary">
+                                                        <option value="">Chất Liệu</option>
+                                                        <option value="pet">Nhựa PET</option>
+                                                        <option value="pp">Nhựa PP</option>
+                                                        <option value="pc">Nhựa PC</option>
+                                                    </select>
+                                                    <select style="margin-top: 15px" name="color" class="form-control pro-edt-select form-control-primary">
+                                                        <option value="">Màu Sắc</option>
+                                                        <option value="do">Đỏ</option>
+                                                        <option value="den">Đen</option>
+                                                        <option value="xanhLa">Xanh lá</option>
+                                                        <option value="trang">Trắng</option>
+                                                        <option value="tim">Tím</option>
+                                                        <option value="cam">Cam</option>
+                                                        <option value="vang">Vàng</option>
+                                                        <option value="khac">Khác</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                <div class="review-content-section">
 
-                        </table>
-                        <div class="custom-pagination">
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination">
-                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                                </ul>
-                            </nav>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"></span>
+                                                        <input type="text" value="<%= product.capacity%>" name="capacity" class="form-control" placeholder="Sức chứa">
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"></span>
+                                                        <input type="text" value="<%= product.shape%>" name="shape" class="form-control" placeholder="Hình dạng">
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"></span>
+                                                        <input type="text" value="<%= product.neckSize%>" name="neckSize" class="form-control" placeholder="Khích thước cổ chai">
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"></span>
+                                                        <input type="text" value="<%= product.height%>" name="height" class="form-control" placeholder="Chiều cao sản phẩm">
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"></span>
+                                                        <input type="text" value="<%= product.diameter%>" name="diameter" class="form-control" placeholder="Đường kính sản phẩm">
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"></span>
+                                                        <input type="text" value="<%= product.weight%>" name="weight" class="form-control" placeholder="Cân nặng">
+                                                    </div>
+                                                    <div class="input-group mg-b-pro-edt">
+                                                        <span class="input-group-addon"></span>
+                                                        <input type="text" value="<%= product.case%>" name="case" class="form-control" placeholder="Vỏ sản phẩm">
+                                                    </div>
+                                                    <select name="status" class="form-control pro-edt-select form-control-primary">
+                                                        <option value="">Tình Trạng Sản Phẩm</option>
+                                                        <option value="1">Còn Hàng</option>
+                                                        <option value="0">Hết Hàng</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 10px">
+                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <div class="text-center mg-b-pro-edt custom-pro-edt-ds">
+                                                    <button type="submit" class="btn btn-primary waves-effect waves-light m-r-10">Save
+                                                    </button>
+                                                    <button type="button" class="btn btn-warning waves-effect waves-light">Discard
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -948,13 +1023,15 @@
 <script src="/jeweler/js/calendar/moment.min.js"></script>
 <script src="/jeweler/js/calendar/fullcalendar.min.js"></script>
 <script src="/jeweler/js/calendar/fullcalendar-active.js"></script>
+<!-- tab JS
+    ============================================ -->
+<script src="/jeweler/js/tab.js"></script>
 <!-- plugins JS
     ============================================ -->
 <script src="/jeweler/js/plugins.js"></script>
 <!-- main JS
     ============================================ -->
 <script src="/jeweler/js/main.js"></script>
-<script src="/js/myjs.js"></script>
 
 </body>
 

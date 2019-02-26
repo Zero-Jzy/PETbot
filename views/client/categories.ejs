@@ -351,6 +351,28 @@
                     </div>
                     <div class="products-list">
                         <div class="row">
+                            <% products.forEach(function (product) {%>
+                            <div class="col-lg-4 col-md-6 mb-4">
+                                <div class="card h-100">
+                                    <a href="/products/<%= product._id%>">
+                                        <div class="img-products" style="width: 100%;background-image: url('<%= product.images[0]%>')"></div>
+                                        <!--<img class="card-img-top" src="/img/chai1.jpg" alt="">-->
+                                        <!--<div class="btn-details-products"><span>Xem</span></div>-->
+                                    </a>
+                                    <div class="card-body">
+                                        <h6 class="card-title">
+                                            <a href=""><%= product.name%></a>
+                                        </h6>
+                                        <h5 class="price"><%= product.price%> VND</h5>
+                                    </div>
+                                    <!--<button type="button" class="btn btn-outline-secondary btn-lg btn-block">Chi tiết sản phẩm</button>-->
+                                    <ul class="m-0">
+                                        <li class="material-title"><%= product.material%></li>
+                                        <li class="capacity-title"><%= product.capacity%>ml</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <%})%>
                             <div class="col-lg-4 col-md-6 mb-4">
                                 <div class="card h-100">
                                     <a href="#">
@@ -371,6 +393,7 @@
                                     </ul>
                                 </div>
                             </div>
+
                             <div class="col-lg-4 col-md-6 mb-4">
                                 <div class="card h-100">
                                     <a href="#">
