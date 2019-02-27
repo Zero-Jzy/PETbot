@@ -85,6 +85,7 @@ $(document).ready(function () {
             $('.title-item-menu i').removeClass('fa-plus').addClass('fa-angle-right');
             $('#megamenu > div').addClass('item-menu-hover');
         }
+
         var cw = $('.img-products').width();
         $('.img-products').css({
             'height': cw + 'px'
@@ -107,16 +108,12 @@ $(document).ready(function () {
         }
 
     });
-    function myFunction() {
-        alert('asdkaksdj')
-    }
+
 
     var cw = $('.img-products').width();
     $('.img-products').css({
         'height': cw + 'px'
     });
-
-
 
 
 });

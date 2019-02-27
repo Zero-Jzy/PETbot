@@ -63,7 +63,8 @@ main {
 .my-carousel-item img{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     min-height: 300px;
 }
 /*Chinh vi tri cho indicator
@@ -220,7 +221,7 @@ ul.list-unstyled li span{
 /*Footer*/
 .site-footer
 {
-    background-color: white;
+    background-color: black;
     padding:45px 0 20px;
     font-size:15px;
     line-height:24px;
@@ -237,7 +238,7 @@ ul.list-unstyled li span{
 }
 .site-footer h6
 {
-    color:#000;
+    color:white;
     font-size:16px;
     text-transform:uppercase;
     margin-top:5px;
@@ -410,9 +411,6 @@ ul.list-unstyled li span{
     z-index: 3;
 }
 
-nav{
-    height: 60px;
-}
 .header ul {
     margin: 0;
     padding: 0;

@@ -7,7 +7,7 @@ var products = new mongoose.Schema({
     description: String, // mô tả chung
     price: String, // giá
     material: String, //chất liệu
-    category: String, //chất liệu
+    category: String,
     color: String, // màu sắc
     capacity: String, // sức chứa
     shape: String, // hình dạng sản phẩm
