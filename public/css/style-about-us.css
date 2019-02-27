@@ -30,17 +30,21 @@ li{
     height:350px;
 }
 .page-infor{
+    padding-left: 15px;
+    padding-top:0;
 
-    padding-top:110px;
-    font-style: italic;
-    height: 350px;
+    height: 85px;
+}
+.page-infor p{
+    padding-top: 12px;
+    text-align: justify;
 }
 
 .infor-body{
     padding-top:50px;
 }
 .video-image-infor{
-    padding-top: 35px;
+    padding-top: 0;
 }
 .image-infor img{
     width: 100%;
