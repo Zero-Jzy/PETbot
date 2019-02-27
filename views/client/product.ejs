@@ -149,7 +149,7 @@
                         <nav>
                             <ul>
                                 <li class=""><a href="/">Trang chủ</a></li>
-                                <li class="active menu-item-has-children"><a href="/">Sản phẩm</a></li>
+                                <li class=""><a href="/">Sản phẩm</a></li>
                                 <li class=""><a href="/">Về Chúng Tôi</a></li>
                                 <li class=""><a href="/contact">Liên Hệ</a></li>
                             </ul>
@@ -179,31 +179,27 @@
                 <div class="carousel-inner" role="listbox">
                 
                     <div class="carousel-item my-carousel-item active">
-                        <img src="http://cdn.nhanh.vn/cdn/store/8024/art/article_1501767591_783.jpg"
+                        <img style="height: 100%;width: auto;" src="<%= product.images[0]%>"
                              alt="anh1" class="d-block img-fluid">
                         <div class="carousel-caption d-none d-md-block">
-                            <p> Anh 1</p>
                         </div>
                     </div>
                     <div class="carousel-item my-carousel-item">
-                        <img src="https://thuytinhmiso.com/wp-content/uploads/2017/06/binh-thuy-tinh-my-bottle-500ml.jpg"
+                        <img style="height: 100%;width: auto" src="<%= product.images[1]%>"
                              alt="anh2" class="img-fluid">
                         <div class="carousel-caption d-none d-md-block">
-                            <p> Anh 2</p>
                         </div>
                     </div>
                     <div class="carousel-item my-carousel-item">
-                        <img src="https://chainhuadep.com/wp-content/uploads/2018/04/chai-co%CC%82%CC%89-ro%CC%A3%CC%82ng-detox-1024x513.jpg"
+                        <img style="height: 100%;width: auto" src="<%= product.images[2]%>"
                              alt="anh3" class="img-fluid">
                         <div class="carousel-caption d-none d-md-block">
-                            <p> Anh 3</p>
                         </div>
                     </div>
                     <div class="carousel-item  my-carousel-item">
-                        <img src="https://chainhuadepgiasiblog.files.wordpress.com/2017/05/chai-nhua-pet-330ml-9.jpg?w=761&h=761&crop=1"
+                        <img style="height: 100%;width: auto" src="<%= product.images[3]%>"
                              alt="anh4" class="img-fluid">
                         <div class="carousel-caption d-none d-md-block">
-                            <p> Anh 4</p>
                         </div>
                     </div>
                 </div>
@@ -211,24 +207,22 @@
                 <ol class="carousel-indicators my-carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active">
                         <img class="img-fluid my-img-fluid"
-                             src="http://cdn.nhanh.vn/cdn/store/8024/art/article_1501767591_783.jpg"
+                             src="<%= product.images[0]%>"
                              alt="">
                     </li>
                     <li data-target="#myCarousel" data-slide-to="1">
                         <img class="img-fluid my-img-fluid"
-                             src="https://thuytinhmiso.com/wp-content/uploads/2017/06/binh-thuy-tinh-my-bottle-500ml.jpg"
+                             src="<%= product.images[1]%>"
                              alt="">
-
                     </li>
                     <li data-target="#myCarousel" data-slide-to="2">
                         <img class="img-fluid my-img-fluid"
-                             src="https://chainhuadep.com/wp-content/uploads/2018/04/chai-co%CC%82%CC%89-ro%CC%A3%CC%82ng-detox-1024x513.jpg"
+                             src="<%= product.images[2]%>"
                              alt="">
-
                     </li>
                     <li data-target="#myCarousel" data-slide-to="3">
                         <img class="img-fluid my-img-fluid"
-                             src="https://chainhuadepgiasiblog.files.wordpress.com/2017/05/chai-nhua-pet-330ml-9.jpg?w=761&h=761&crop=1">
+                             src="<%= product.images[3]%>">
 
                     </li>
                 </ol>
@@ -245,21 +239,21 @@
         <!--Day la noi dung bên phải trang.-->
         <div class="col-12 col-sm-6">
             <div class="inner">
-                <h1 class="product-name">Chai nhựa 330ml Trà Sữa.</h1>
+                <h1 class="product-name"><%= product.name%></h1>
                 <div class="price-box box-regular">
 							<span class="regular-price">
-								<span class="price">8000 VNĐ</span>
+								<span class="price"><%= product.price%> VNĐ</span>
 							</span>
                 </div>
                 <ul class="list-unstyled">
                     <li>Tên sp: <a
-                                href="#">Chai đựng nước</a>
+                                href="#"><%= product.name%></a>
                     </li>
-                    <li>Mã sp: <span>CL-1001</span></li>
-                    <li>Tình trạng: <span>còn hàng</span></li>
+                    <li>Mã sp: <span><%= product.productCode%></span></li>
+                    <li>Tình trạng: <span><%= product.status%></span></li>
 
                 </ul>
-                <p class="short-des">Chai nhựa 330ml tròn ngấn có dáng khá cơ bản, duyên dáng và tinh tế trong từng đường nét.  Vết ngấn ở gần đáy chai hỗ trợ cho chai cứng cáp hơn.</p>
+                <p class="short-des">Đây là miêu tả nhá. </p>
                 <form>
                     <div class="form-group row">
                         <label for="quantity" class="col-2 col-sm-1 col-form-label">SL</label>
@@ -267,7 +261,7 @@
                             <input type="text" class="form-control" id="quantity" value="1">
                         </div>
                         <div class="col-12 col-sm-6 mt-1 mt-sm-0">
-                            <button type="button" class="btn btn-danger btn-block">Đặt hàng </button>
+                            <button type="button" class="btn btn-danger btn-block">Liên hệ đặt hàng.</button>
                         </div>
                     </div>
                     <!--<a href="javascript:void(0)" class="detail-btn"><i class="far fa-heart"></i> Yêu thích</a>-->
@@ -322,24 +316,56 @@
                 <table class="table table-bordered">
                     <thead>
                     <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">First</th>
-                        <th scope="col">Last</th>
-
+                        <th  scope="col">Thông Số KĨ Thuật</th>
+                        <th scope="col">Giá Trị</th>
+                        <th scope="col">Đơn vị đo</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-
+                        <th scope="row">Màu Sắc</th>
+                        <td><%= product.color%></td>
+                        <td></td>
                     </tr>
                     <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-
+                        <th>Chất Liệu</th>
+                        <td><%= product.material%></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Sức Chứa</th>
+                        <td><%= product.capacity%></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Hình dạng</th>
+                        <td><%= product.shape%></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Kích thước cổ</th>
+                        <td><%= product.neckSize%></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Chiều cao</th>
+                        <td><%= product.height%></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Đường kính</th>
+                        <td><%= product.diameter%></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Cân nặng</th>
+                        <td><%= product.weight%></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <th>Vỏ sản phẩm</th>
+                        <td><%= product.case%></td>
+                        <td></td>
                     </tr>
                     </tbody>
                 </table>
