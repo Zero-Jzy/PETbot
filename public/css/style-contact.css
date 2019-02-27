@@ -1,12 +1,27 @@
+.breadcrumb{
+    background: #f1f3f5;
+}
+
+.mybreadcrumb{
+    margin-left: 20px;
+    padding: 40px 0;
+    font-size: 14px;
+}
+
+
+.mybreadcrumb a{
+    color: cadetblue;
+}
 .media{
     display: flex;
 }
 .media-body h3{
     font-size: 20px;
     font-weight: 600;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 0;
     margin-bottom: 0;
+    display: inline-block;
 }
 .media-body p{
     margin-left: 20px;
