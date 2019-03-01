@@ -63,7 +63,8 @@ main {
 .my-carousel-item img{
     position: absolute;
     top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     min-height: 300px;
 }
 /*Chinh vi tri cho indicator
@@ -410,9 +411,6 @@ ul.list-unstyled li span{
     z-index: 3;
 }
 
-nav{
-    height: 60px;
-}
 .header ul {
     margin: 0;
     padding: 0;
