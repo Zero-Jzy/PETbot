@@ -92,8 +92,6 @@
                                             </ul>
                                         </div>
                                     </div>
-
-
                                 </div>
                                 <div class="clearfix"></div>
                             </div>
@@ -104,7 +102,7 @@
                     <nav>
                         <ul>
                             <li class=""><a href="/">Trang chủ</a></li>
-                            <li class="active menu-item-has-children"><a href="/products">Sản phẩm</a></li>
+                            <li class="active"><a href="/products/1">Sản phẩm</a></li>
                             <li class=""><a href="/about-us">Về Chúng Tôi</a></li>
                             <li class=""><a href="/contact">Liên Hệ</a></li>
                         </ul>
@@ -148,7 +146,7 @@
                         <nav>
                             <ul>
                                 <li class=""><a href="/">Trang chủ</a></li>
-                                <li class="active menu-item-has-children"><a href="/">Sản phẩm</a></li>
+                                <li class="active"><a href="/">Sản phẩm</a></li>
                                 <li class=""><a href="/">Về Chúng Tôi</a></li>
                                 <li class=""><a href="/contact">Liên Hệ</a></li>
                             </ul>
@@ -325,8 +323,9 @@
                     </div>
                 </aside>
             </div>
-            <div class="col-md-9  pl-3">
-                <div class="content">
+            <div class="col-md-9 pl-3">
+                <div class="content border-bottom">
+                    <!--<Tool Bar>-->
                     <div class="toolbar d-flex justify-content-between align-items-center">
                         <div class="mr-3">
                             <select class="d-block">
@@ -349,15 +348,16 @@
                         </div>
 
                     </div>
+                    <!--</Tool Bar>-->
+
+                    <!--<Products List>-->
                     <div class="products-list">
                         <div class="row">
                             <% products.forEach(function (product) {%>
                             <div class="col-lg-4 col-md-6 mb-4">
                                 <div class="card h-100">
-                                    <a href="/products/<%= product._id%>">
+                                    <a href="/products/detail/<%= product._id%>">
                                         <div class="img-products" style="width: 100%;background-image: url('<%= product.images[0]%>')"></div>
-                                        <!--<img class="card-img-top" src="/img/chai1.jpg" alt="">-->
-                                        <!--<div class="btn-details-products"><span>Xem</span></div>-->
                                     </a>
                                     <div class="card-body">
                                         <h6 class="card-title">
@@ -365,7 +365,6 @@
                                         </h6>
                                         <h5 class="price"><%= product.price%> VND</h5>
                                     </div>
-                                    <!--<button type="button" class="btn btn-outline-secondary btn-lg btn-block">Chi tiết sản phẩm</button>-->
                                     <ul class="m-0">
                                         <li class="material-title text-uppercase"><%= product.material%></li>
                                         <li class="capacity-title"><%= product.capacity%>ml</li>
@@ -373,145 +372,73 @@
                                 </div>
                             </div>
                             <%})%>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <a href="#">
-                                        <div class="img-products" style="width: 100%;background-image: url('/img/chai1.jpg')"></div>
-                                        <!--<img class="card-img-top" src="/img/chai1.jpg" alt="">-->
-                                        <!--<div class="btn-details-products"><span>Xem</span></div>-->
-                                    </a>
-                                    <div class="card-body">
-                                        <h6 class="card-title">
-                                            <a href="">Chai nhựa hình bầu dục</a>
-                                        </h6>
-                                        <h5 class="price">$2.99</h5>
-                                    </div>
-                                    <!--<button type="button" class="btn btn-outline-secondary btn-lg btn-block">Chi tiết sản phẩm</button>-->
-                                    <ul class="m-0">
-                                        <li class="material-title">PET</li>
-                                        <li class="capacity-title">500ml</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <a href="#">
-                                        <div class="img-products" style="width: 100%;background-image: url('/img/chai8.jpg')"></div>
-                                        <!--<div class="btn-details-products"><span>Xem</span></div>-->
-                                    </a>
-                                    <div class="card-body">
-                                        <h6 class="card-title">
-                                            Chai nhựa hình bầu dục
-                                        </h6>
-                                        <h5 class="price">$2.99</h5>
-                                    </div>
-                                    <ul class="m-0">
-                                        <li class="material-title">PC</li>
-                                        <li class="capacity-title">500ml</li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <a href="#" title="adsadsadas">
-                                        <div class="img-products" style="width: 100%;background-image: url('/img/chai7.jpg')"></div>
-                                        <!--<div class="btn-details-products"><span>Xem</span></div>-->
-                                    </a>
-                                    <div class="card-body">
-                                        <h6 class="card-title">
-                                            Chai nhựa hình bầu dục
-                                        </h6>
-                                        <h5 class="price">$2.99</h5>
-                                    </div>
-                                    <ul class="m-0">
-                                        <li class="material-title">PP</li>
-                                        <li class="capacity-title">500ml</li>
-                                    </ul>
-                                </div>
-                            </div>
-
                             <!--<div class="col-lg-4 col-md-6 mb-4">-->
                                 <!--<div class="card h-100">-->
-                                    <!--<a href="#"><img class="card-img-top" src="/img/chai3.jpg" alt=""></a>-->
+                                    <!--<a href="#">-->
+                                        <!--<div class="img-products" style="width: 100%;background-image: url('/img/chai1.jpg')"></div>-->
+                                        <!--&lt;!&ndash;<img class="card-img-top" src="/img/chai1.jpg" alt="">&ndash;&gt;-->
+                                    <!--</a>-->
                                     <!--<div class="card-body">-->
-                                        <!--<h4 class="card-title">-->
-                                            <!--<a href="#">Lọ PET trong suốt miệng rộng</a>-->
-                                        <!--</h4>-->
-                                        <!--<h5>$1.99</h5>-->
-                                        <!--<p class="card-text">Những lọ này có khả năng chống trầy xước cao và rất tốt cho cả việc lưu trữ và trưng bày sản phẩm.</p>-->
+                                        <!--<h6 class="card-title">-->
+                                            <!--<a href="">Chai nhựa hình bầu dục</a>-->
+                                        <!--</h6>-->
+                                        <!--<h5 class="price">$2.99</h5>-->
                                     <!--</div>-->
-                                    <!--<button type="button" class="btn btn-outline-secondary btn-lg btn-block">Chi tiết sản phẩm</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-
-                            <!--<div class="col-lg-4 col-md-6 mb-4">-->
-                                <!--<div class="card h-100">-->
-                                    <!--<a href="#"><img class="card-img-top" src="/img/chai4.jpg" alt=""></a>-->
-                                    <!--<div class="card-body">-->
-                                        <!--<h4 class="card-title">-->
-                                            <!--<a href="#">Bình đựng nước giải khát và sữa</a>-->
-                                        <!--</h4>-->
-                                        <!--<h5>$1.55</h5>-->
-                                        <!--<p class="card-text">Thường được sử dụng để đựng các loại nước giải khát, nước ép và sữa.</p>-->
-                                    <!--</div>-->
-                                    <!--<button type="button" class="btn btn-outline-secondary btn-lg btn-block">Chi tiết sản phẩm</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-
-                            <!--<div class="col-lg-4 col-md-6 mb-4">-->
-                                <!--<div class="card h-100">-->
-                                    <!--<a href="#"><img class="card-img-top" src="/img/chai5.jpg" alt=""></a>-->
-                                    <!--<div class="card-body">-->
-                                        <!--<h4 class="card-title">-->
-                                            <!--<a href="#">Chai đựng nước cao cấp</a>-->
-                                        <!--</h4>-->
-                                        <!--<h5>$4.99</h5>-->
-                                        <!--<p class="card-text">Những chai nước chất lượng cao, bền này rất tốt cho các nhà đóng chai gia đình hoặc các ngành công nghiệp đóng chai lớn.</p>-->
-                                    <!--</div>-->
-                                    <!--<button type="button" class="btn btn-outline-secondary btn-lg btn-block">Chi tiết sản phẩm</button>-->
-                                <!--</div>-->
-                            <!--</div>-->
-
-                            <!--<div class="col-lg-4 col-md-6 mb-4">-->
-                                <!--<div class="card h-100">-->
-                                    <!--<a href="#"><img class="card-img-top" src="/img/chai6.jpg" alt=""></a>-->
-                                    <!--<div class="card-body">-->
-                                        <!--<h4 class="card-title">-->
-                                            <!--<a href="#">Chai nước giải khát PET có nắp</a>-->
-                                        <!--</h4>-->
-                                        <!--<h5>$2.69</h5>-->
-                                        <!--<p class="card-text">Những chai nước giải khát lớn, tròn này rất tốt để đựng nước trái cây và bia.</p>-->
-                                    <!--</div>-->
-                                    <!--<button type="button" class="btn btn-outline-secondary btn-lg btn-block">Chi tiết sản phẩm</button>-->
+                                    <!--&lt;!&ndash;<button type="button" class="btn btn-outline-secondary btn-lg btn-block">Chi tiết sản phẩm</button>&ndash;&gt;-->
+                                    <!--<ul class="m-0">-->
+                                        <!--<li class="material-title">PET</li>-->
+                                        <!--<li class="capacity-title">500ml</li>-->
+                                    <!--</ul>-->
                                 <!--</div>-->
                             <!--</div>-->
 
                         </div>
-                        <div class="center mt-5 ">
-                            <nav aria-label="Page navigation example">
-                                <ul class="pagination justify-content-center">
-                                    <li class="page-item disabled" style="width: 114px">
-                                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-                                    </li>
-                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">Next</a>
-                                    </li>
+                    </div>
+                    <!--</Products List>-->
+
+                    <div class="">
+                        <div class="ml-auto">
+                            <% if (pages > 0) { %>
+                                <ul class="pagination">
+                                    <% if (current == 1) { %>
+                                        <li class="disabled page-item"><a class="page-link">Trang đầu</a></li>
+                                    <% } else { %>
+                                        <li class="page-item"><a class="page-link" href="/products/trang-1">Trang đầu</a></li>
+                                    <% } %>
+
+                                    <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
+                                    <% if (i !== 1) { %>
+                                        <li class="disabled page-item"><a class="page-link">...</a></li>
+                                    <% } %>
+
+                                    <% for (; i <= (Number(current) + 4) && i <= pages; i++) { %>
+
+                                        <% if (i == current) { %>
+                                            <li class="active page-item"><a class="page-link"><%= i %></a></li>
+                                        <% } else { %>
+                                            <li class="page-item"><a class="page-link" href="/products/trang-<%= i %>"><%= i %></a></li>
+                                        <% } %>
+
+                                        <% if (i == Number(current) + 4 && i < pages) { %>
+                                            <li class="disabled page-item"><a class="page-link">...</a></li>
+                                        <% } %>
+
+                                    <% } %>
+
+
+                                    <% if (current == pages) { %>
+                                        <li class="disabled page-item"><a class="page-link">Last</a></li>
+                                    <% } else { %>
+                                        <li class="page-item"><a class="page-link" href="/products/trang-<%= pages %>">Last</a></li>
+                                    <% } %>
                                 </ul>
-                            </nav>
+                            <% } %>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <button onclick="myFunction()">
-    </button>
 </section>
 
 <div class="modal-box">
@@ -535,9 +462,9 @@
                                         <label for="checkbox-modal-1" class="categories-btn float-right"><i class="fas fa-plus"></i></label>
                                         <div class="d-categories">
                                             <ul>
-                                                <li> + chai đựng đồ uống </li>
-                                                <li> + chai đựng chất hóa học </li>
-                                                <li> + chai đựng dược phẩm </li>
+                                                <li> Chai đựng đồ uống </li>
+                                                <li> Chai đựng chất hóa học </li>
+                                                <li> Chai đựng dược phẩm </li>
                                             </ul>
                                         </div>
                                     </li>
@@ -546,11 +473,11 @@
                                         <label for="checkbox-modal-2" class="categories-btn float-right"><i class="fas fa-plus"></i></label>
                                         <div class="d-categories">
                                             <ul>
-                                                <li> +  lọ gia vị </li>
-                                                <li> + lọ đựng chất hóa học </li>
-                                                <li> + lọ đựng mỹ phẩm</li>
-                                                <li> + lọ trang trí </li>
-                                                <li> + lọ thực phẩm</li>
+                                                <li> Lọ gia vị </li>
+                                                <li> Lọ đựng chất hóa học </li>
+                                                <li> Lọ đựng mỹ phẩm</li>
+                                                <li> Lọ trang trí </li>
+                                                <li> Lọ thực phẩm</li>
                                             </ul>
                                         </div>
                                     </li>
@@ -560,9 +487,9 @@
                                         <label for="checkbox-modal-3" class="categories-btn float-right"><i class="fas fa-plus"></i></label>
                                         <div class="d-categories">
                                             <ul>
-                                                <li> + bình đựng nước </li>
-                                                <li> + bình dựng rượu </li>
-                                                <li> + bình đựng chất hóa học </li>
+                                                <li> Bình đựng nước </li>
+                                                <li> Bình dựng rượu </li>
+                                                <li> Bình đựng chất hóa học </li>
                                             </ul>
                                         </div>
                                     </li>
@@ -690,6 +617,11 @@
 <div class="topBtn">
     <img src="" alt="">
 </div>
+
+<!--<Footer>-->
+<% include include/footer.ejs%>
+<!--</Footer>-->
+
 <script src="/js/lib/jquery-3.3.1.min.js"></script>
 <script src="/js/lib/bootstrap.min.js"></script>
 <script src="/js/myjs.js"></script>
