@@ -677,15 +677,21 @@ nav ul li:hover a{
 .footer-links
 {
     padding-left:0;
-    list-style:none
+    list-style:none;
+    font-family: auto;
 }
 .footer-links li
 {
-    display:block
+    display:block;
+    font-size:22px ;
+    margin-bottom: 20px;
 }
 .footer-links a
 {
     color:#737373
+}
+.footer-links a:hover{
+    color:white
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
@@ -791,4 +797,26 @@ nav ul li:hover a{
 {
     background-color:#00aced
 }
+.site-footer h6:hover {
+  color: honeydew;
+}
+h1.title{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Alfa Slab One', cursive;
+    color: orange;
+    font-size: 60px;
+    width: 130%;
+}
+h1{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Judson', serif;
+}
 
+ul.footer-links li:hover{
+    color: white;
+}
+
+@media  {
+    
+}
