@@ -6,7 +6,7 @@ var mongoose = require('mongoose');
 var productRouter = require('./routers/products.route');
 var ad_productRouter = require('./routers/admin.products.route');
 var otherRouter = require('./routers/other.route');
-
+var products = require('./models/model.product');
 const fileUpload = require('express-fileupload');
 var cloudinary = require('cloudinary');
 
@@ -28,13 +28,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
-
 app.use('/products', productRouter);
 app.use('/admin/products', ad_productRouter);
 app.use('/', otherRouter);
 
 app.get('/',function (req, res) {
-    res.render('client/home');
+    products.find().exec(function (err, products) {
+        res.render('client/home', {products: products});
+    });
 });
 
 
