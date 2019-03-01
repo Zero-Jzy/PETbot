@@ -17,8 +17,8 @@ li{
     list-style: none;
 }
 .infor-page{
-    padding-bottom: 50px;
-    border-bottom: 1px solid #9F9F9F;
+    padding-top: 77px;
+    padding-bottom: 90px;
 }
 
 .video{
@@ -40,8 +40,27 @@ li{
     text-align: justify;
 }
 
-.infor-body{
-    padding-top:50px;
+.infor-body1{
+    padding-top:17px;
+    padding-bottom:105px ;
+}
+.infor-body2{
+    padding-top: 3px;
+    padding-bottom: 121px;
+
+}
+.infor-body3{
+
+    padding-top: 17px;
+    padding-bottom: 127px;
+}
+.infor-body4{
+
+    padding-top: 2px;
+    padding-bottom: 35px;
+}
+.image-infor img{
+    align-content: center;
 }
 .video-image-infor{
     padding-top: 0;
@@ -59,9 +78,32 @@ li{
 .img-prize{
     padding-top: 50px;
     padding-left: 80px;
-
+}
+@media(max-width: 600px) {
+    .img-prize{
+        padding-top: 0;
+        padding-left:0;
+        margin-left: 10%;
+    }
 }
 .img-prize-infor{
     padding-top: 30px;
+    text-align: justify;
 }
 
+.bg-infor-body1{
+    background-color: #d3d9df;
+}
+.bg-infor-body2{
+    background-color: #9F9F9F;
+}
+.bg-infor-body3{
+    background-color: #d3d9df;
+}
+.bg-infor-body4{
+    background-color: #9F9F9F;
+}
+.img-infor-page img{
+    height: 600px;
+    width: 1000px;
+}
