@@ -306,6 +306,10 @@ card
     border-color: #cea45f;
 }
 
+.card-title{
+    height: 30px;
+}
+
 .card-title a{
     font-size: 22px;
     color: #1e1e1e;
@@ -315,29 +319,6 @@ card
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
-/*.card-title a:hover{*/
-    /*color: white;*/
-    /*color: #cea45f;*/
-/*}*/
-
-/*.card-text{*/
-    /*font-size: 15px;*/
-    /*color: #1e1e1e;*/
-/*}*/
-
-/*.card button{*/
-    /*border-color: #cea45f;*/
-/*}*/
-
-/*.center a{*/
-    /*color: #cea45f;*/
-/*}*/
-
-/*.center a:hover{*/
-    /*background-color: #cea45f;*/
-    /*color: white;*/
-/*}*/
 
 
 .card ul li{
@@ -353,12 +334,15 @@ card
 }
 
 .card ul .material-title{
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
     background: #1e1e1e;
     top: 15px;
 }
 
 .card ul .capacity-title{
-    background: #2075eb;
+    background: #cea45f;
     top: 45px;
 }
 

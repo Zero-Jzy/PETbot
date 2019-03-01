@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/style-contact.css">
-    <style>
-        #map{
-            height:400px;
-            width:100%;
-        }
-    </style>
     <title>Document</title>
 </head>
 <body>
@@ -109,9 +104,9 @@
                     <nav>
                         <ul>
                             <li class=""><a href="/">Trang chủ</a></li>
-                            <li class=""><a href="/products">Sản phẩm</a></li>
+                            <li class=""><a href="/products/1">Sản phẩm</a></li>
                             <li class=""><a href="/about-us">Về Chúng Tôi</a></li>
-                            <li class="active menu-item-has-children"><a href="/contact">Liên Hệ</a></li>
+                            <li class="active"><a href="/contact">Liên Hệ</a></li>
                         </ul>
                     </nav>
 
@@ -254,6 +249,11 @@
         </div>
     </div>
 </div>
+
+<!--<Footer>-->
+<% include include/footer.ejs%>
+<!--</Footer>-->
+
 <script src="/js/lib/jquery-3.3.1.min.js"></script>
 <script src="/js/lib/jquery.validate.min.js"></script>
 <script src="/js/myjs.js"></script>
