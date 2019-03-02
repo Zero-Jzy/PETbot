@@ -108,7 +108,8 @@ nav ul li:hover a {
 }
 
 .megamenu-drop {
-    border: 1px solid;
+    border: solid rgba(0,0,0,0.15);
+    border-width: 0 1px 1px 1px;
     position: absolute;
     width: -webkit-fill-available;
     background-color: white;
@@ -322,7 +323,7 @@ nav ul li:hover a {
     background: white;
     width: 40px;
     height: 40px;
-    border: 1px solid #cea45f;
+    border: 1px solid rgba(0,0,0,0.1);
     transition: .5s;
     color: #cea45f;
     padding: 9px;
@@ -356,6 +357,7 @@ nav ul li:hover a {
 .btn-prev-carousel:hover, .btn-next-carousel:hover{
     color: white;
     background: #cea45f;
+    border: 1px solid #cea45f;
 }
 
 /*.p-carousel-item:hover div, .carousel-control-prev:hover div{*/
@@ -424,7 +426,7 @@ nav ul li:hover a {
 }
 
 .main-products .card:hover .box-read-more{
-    transform: translateY(5%);
+    transform: translateY(0);
 
 }
 

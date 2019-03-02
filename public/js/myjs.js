@@ -59,11 +59,11 @@ $(document).ready(function () {
         $(a).click(function () {
             if (!$(this).prev().is(":checked")) {
                 console.log('1');
-                $(this).next().animate({height: 'show'}, 300);
+                $(this).parent().next().animate({height: 'show'}, 300);
                 $(this).html('<i class="fas fa-minus"></i>')
             } else {
                 console.log('2');
-                $(this).next().animate({height: 'hide'}, 300);
+                $(this).parent().next().animate({height: 'hide'}, 300);
                 $(this).html('<i class="fas fa-plus"></i>')
 
             }

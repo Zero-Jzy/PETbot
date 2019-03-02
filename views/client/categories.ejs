@@ -1,4 +1,4 @@
- <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -16,7 +16,7 @@
 <body>
 
 <!--<Header>-->
-<% include include/header.ejs%>
+<% include include/header.ejs %>
 <!--</Header>-->
 
 <div class="breadcrumb">
@@ -37,39 +37,47 @@
                         <div class="categories mb-4">
                             <h5>Danh Mục</h5>
                             <ul>
-                                <li><a href="#">Chai Nhựa</a>
-                                    <input class="d-none" id="checkbox1" type="checkbox">
-                                    <label for="checkbox1" class="categories-btn float-right"><i class="fas fa-plus"></i></label>
+                                <li>
+                                    <div>
+                                        <a href="#">Chai Nhựa</a>
+                                        <input class="d-none" id="checkbox-modal-1" type="checkbox">
+                                        <label for="checkbox-modal-1" class="categories-btn float-right"><i class="fas fa-plus"></i></label>
+                                    </div>
                                     <div class="d-categories">
                                         <ul>
-                                            <li> Chai đựng đồ uống </li>
-                                            <li> Chai đựng chất hóa học </li>
-                                            <li> Chai đựng dược phẩm </li>
+                                            <li> Chai đựng đồ uống</li>
+                                            <li> Chai đựng chất hóa học</li>
+                                            <li> Chai đựng dược phẩm</li>
                                         </ul>
                                     </div>
                                 </li>
-                                <li><a href="#">Lọ Nhựa</a>
-                                    <input class="d-none" id="checkbox2" type="checkbox">
-                                    <label for="checkbox2" class="categories-btn float-right"><i class="fas fa-plus"></i></label>
+                                <li>
+                                    <div>
+                                        <a href="#">Lọ Nhựa</a>
+                                        <input class="d-none" id="checkbox2" type="checkbox">
+                                        <label for="checkbox2" class="categories-btn float-right"><i class="fas fa-plus"></i></label>
+                                    </div>
                                     <div class="d-categories">
-                                        <ul >
-                                            <li> Lọ gia vị </li>
-                                            <li> Lọ đựng chất hóa học </li>
+                                        <ul>
+                                            <li> Lọ gia vị</li>
+                                            <li> Lọ đựng chất hóa học</li>
                                             <li> Lọ đựng mỹ phẩm</li>
-                                            <li> Lọ trang trí </li>
+                                            <li> Lọ trang trí</li>
                                             <li> Lọ thực phẩm</li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li>
-                                    <a href="#">Bình Nhựa</a>
-                                    <input class="d-none" id="checkbox3" type="checkbox">
-                                    <label for="checkbox3" class="categories-btn float-right"><i class="fas fa-plus"></i></label>
+                                    <div>
+                                        <a href="#">Bình Nhựa</a>
+                                        <input class="d-none" id="checkbox3" type="checkbox">
+                                        <label for="checkbox3" class="categories-btn float-right"><i class="fas fa-plus"></i></label>
+                                    </div>
                                     <div class="d-categories">
                                         <ul>
-                                            <li> Bình đựng nước </li>
-                                            <li> Bình dựng rượu </li>
-                                            <li> Bình đựng chất hóa học </li>
+                                            <li> Bình đựng nước</li>
+                                            <li> Bình dựng rượu</li>
+                                            <li> Bình đựng chất hóa học</li>
                                         </ul>
                                     </div>
                                 </li>
@@ -78,9 +86,9 @@
                         <div class="filter">
                             <div class="filter-price">
                                 <a href=""><h5>Giá</h5></a>
-                                <div class="p-3">
-                                    <input class="p-2" placeholder="Tối thiểu" type="number"><span class="text-center">-</span>
-                                    <input class="p-2" placeholder="Tối đa" type="number">
+                                <div class="pb-3 d-flex justify-content-around">
+                                    <input type="number" placeholder="Tối thiểu"><span class="text-center">-</span>
+                                    <input type="number" placeholder="Tối đa">
                                     <button><i class="fa fa-play" aria-hidden="true"></i></button>
                                 </div>
                             </div>
@@ -117,14 +125,22 @@
                                 <div class="select-color">
                                     <h5>Màu sắc</h5>
                                     <div class="list-color row">
-                                        <a href="#" class="color1 col-2 ml-2 mt-2" style="background-color: #1c7430"></a>
-                                        <a href="#" class="color2 col-2 ml-2 mt-2" style="background-color: #0069d9"></a>
-                                        <a href="#" class="color3 col-1 ml-2 mt-2" style="background-color: #bd2130"></a>
-                                        <a href="#" class="color4 col-1 ml-2 mt-2" style="background-color: #c8cbcf"></a>
-                                        <a href="#" class="color5 col-1 ml-2 mt-2" style="background-color: #e0a800"></a>
-                                        <a href="#" class="color6 col-1 ml-2 mt-2" style="background-color: #fd7e14"></a>
-                                        <a href="#" class="color7 col-1 ml-2 mt-2" style="background-color:#6610f2 "></a>
-                                        <a href="#" class="color8 col-1 ml-2 mt-2" style="background-color: #1b1e21"></a>
+                                        <a href="#" class="color1 col-2 ml-2 mt-2"
+                                           style="background-color: #1c7430"></a>
+                                        <a href="#" class="color2 col-2 ml-2 mt-2"
+                                           style="background-color: #0069d9"></a>
+                                        <a href="#" class="color3 col-1 ml-2 mt-2"
+                                           style="background-color: #bd2130"></a>
+                                        <a href="#" class="color4 col-1 ml-2 mt-2"
+                                           style="background-color: #c8cbcf"></a>
+                                        <a href="#" class="color5 col-1 ml-2 mt-2"
+                                           style="background-color: #e0a800"></a>
+                                        <a href="#" class="color6 col-1 ml-2 mt-2"
+                                           style="background-color: #fd7e14"></a>
+                                        <a href="#" class="color7 col-1 ml-2 mt-2"
+                                           style="background-color:#6610f2 "></a>
+                                        <a href="#" class="color8 col-1 ml-2 mt-2"
+                                           style="background-color: #1b1e21"></a>
                                     </div>
                                 </div>
                             </div>
@@ -202,7 +218,8 @@
                             </ul>
                         </div>
                         <div class="btn-filter mr-4">
-                            <button class="btn btn-dark" data-toggle="modal" data-target="#filter-modal"><span class="mr-2">Lọc</span><i class="fas fa-filter"></i></button>
+                            <button class="btn btn-dark" data-toggle="modal" data-target="#filter-modal"><span
+                                        class="mr-2">Lọc</span><i class="fas fa-filter"></i></button>
                         </div>
 
                     </div>
@@ -211,43 +228,44 @@
                     <!--<Products List>-->
                     <div class="products-list">
                         <div class="row">
-                            <% products.forEach(function (product) {%>
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <a href="/products/detail/<%= product._id%>">
-                                        <div class="img-products" style="width: 100%;background-image: url('<%= product.images[0]%>')"></div>
-                                    </a>
-                                    <div class="card-body">
-                                        <h6 class="card-title">
-                                            <a href=""><%= product.name%></a>
-                                        </h6>
-                                        <h5 class="price"><%= product.price%> VND</h5>
+                            <% products.forEach(function (product) { %>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="card h-100">
+                                        <a href="/products/detail/<%= product._id %>">
+                                            <div class="img-products"
+                                                 style="width: 100%;background-image: url('<%= product.images[0] %>')"></div>
+                                        </a>
+                                        <div class="card-body">
+                                            <h3 class="card-title">
+                                                <a href=""><%= product.name %></a>
+                                            </h3>
+                                            <span class="price"><%= product.price %> VND</span>
+                                        </div>
+                                        <ul class="m-0">
+                                            <li class="material-title text-uppercase"><%= product.material %></li>
+                                            <li class="capacity-title"><%= product.capacity %>ml</li>
+                                        </ul>
                                     </div>
-                                    <ul class="m-0">
-                                        <li class="material-title text-uppercase"><%= product.material%></li>
-                                        <li class="capacity-title"><%= product.capacity%>ml</li>
-                                    </ul>
                                 </div>
-                            </div>
-                            <%})%>
+                            <% }) %>
                             <!--<div class="col-lg-4 col-md-6 mb-4">-->
-                                <!--<div class="card h-100">-->
-                                    <!--<a href="#">-->
-                                        <!--<div class="img-products" style="width: 100%;background-image: url('/img/chai1.jpg')"></div>-->
-                                        <!--&lt;!&ndash;<img class="card-img-top" src="/img/chai1.jpg" alt="">&ndash;&gt;-->
-                                    <!--</a>-->
-                                    <!--<div class="card-body">-->
-                                        <!--<h6 class="card-title">-->
-                                            <!--<a href="">Chai nhựa hình bầu dục</a>-->
-                                        <!--</h6>-->
-                                        <!--<h5 class="price">$2.99</h5>-->
-                                    <!--</div>-->
-                                    <!--&lt;!&ndash;<button type="button" class="btn btn-outline-secondary btn-lg btn-block">Chi tiết sản phẩm</button>&ndash;&gt;-->
-                                    <!--<ul class="m-0">-->
-                                        <!--<li class="material-title">PET</li>-->
-                                        <!--<li class="capacity-title">500ml</li>-->
-                                    <!--</ul>-->
-                                <!--</div>-->
+                            <!--<div class="card h-100">-->
+                            <!--<a href="#">-->
+                            <!--<div class="img-products" style="width: 100%;background-image: url('/img/chai1.jpg')"></div>-->
+                            <!--&lt;!&ndash;<img class="card-img-top" src="/img/chai1.jpg" alt="">&ndash;&gt;-->
+                            <!--</a>-->
+                            <!--<div class="card-body">-->
+                            <!--<h6 class="card-title">-->
+                            <!--<a href="">Chai nhựa hình bầu dục</a>-->
+                            <!--</h6>-->
+                            <!--<h5 class="price">$2.99</h5>-->
+                            <!--</div>-->
+                            <!--&lt;!&ndash;<button type="button" class="btn btn-outline-secondary btn-lg btn-block">Chi tiết sản phẩm</button>&ndash;&gt;-->
+                            <!--<ul class="m-0">-->
+                            <!--<li class="material-title">PET</li>-->
+                            <!--<li class="capacity-title">500ml</li>-->
+                            <!--</ul>-->
+                            <!--</div>-->
                             <!--</div>-->
 
                         </div>
@@ -261,7 +279,8 @@
                                     <% if (current == 1) { %>
                                         <li class="disabled page-item"><a class="page-link">Trang đầu</a></li>
                                     <% } else { %>
-                                        <li class="page-item"><a class="page-link" href="/products/trang-1">Trang đầu</a></li>
+                                        <li class="page-item"><a class="page-link" href="/products/trang-1">Trang
+                                                đầu</a></li>
                                     <% } %>
 
                                     <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
@@ -274,7 +293,8 @@
                                         <% if (i == current) { %>
                                             <li class="active page-item"><a class="page-link"><%= i %></a></li>
                                         <% } else { %>
-                                            <li class="page-item"><a class="page-link" href="/products/trang-<%= i %>"><%= i %></a></li>
+                                            <li class="page-item"><a class="page-link"
+                                                                     href="/products/trang-<%= i %>"><%= i %></a></li>
                                         <% } %>
 
                                         <% if (i == Number(current) + 4 && i < pages) { %>
@@ -283,11 +303,11 @@
 
                                     <% } %>
 
-
                                     <% if (current == pages) { %>
                                         <li class="disabled page-item"><a class="page-link">Last</a></li>
                                     <% } else { %>
-                                        <li class="page-item"><a class="page-link" href="/products/trang-<%= pages %>">Last</a></li>
+                                        <li class="page-item"><a class="page-link" href="/products/trang-<%= pages %>">Last</a>
+                                        </li>
                                     <% } %>
                                 </ul>
                             <% } %>
@@ -300,7 +320,8 @@
 </section>
 
 <div class="modal-box">
-    <div class="modal fade" id="filter-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade" id="filter-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+         aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -315,26 +336,31 @@
                             <div class="categories mb-4">
                                 <h5>Danh Mục</h5>
                                 <ul>
-                                    <li><a href="#">Chai Nhựa</a>
-                                        <input class="d-none" id="checkbox-modal-1" type="checkbox">
-                                        <label for="checkbox-modal-1" class="categories-btn float-right"><i class="fas fa-plus"></i></label>
+                                    <li>
+                                        <div>
+                                            <a href="#">Chai Nhựa</a>
+                                            <input class="d-none" id="checkbox-modal-1" type="checkbox">
+                                            <label for="checkbox-modal-1" class="categories-btn float-right"><i
+                                                        class="fas fa-plus"></i></label>
+                                        </div>
                                         <div class="d-categories">
                                             <ul>
-                                                <li> Chai đựng đồ uống </li>
-                                                <li> Chai đựng chất hóa học </li>
-                                                <li> Chai đựng dược phẩm </li>
+                                                <li> Chai đựng đồ uống</li>
+                                                <li> Chai đựng chất hóa học</li>
+                                                <li> Chai đựng dược phẩm</li>
                                             </ul>
                                         </div>
                                     </li>
                                     <li><a href="#">Lọ Nhựa</a>
                                         <input class="d-none" id="checkbox-modal-2" type="checkbox">
-                                        <label for="checkbox-modal-2" class="categories-btn float-right"><i class="fas fa-plus"></i></label>
+                                        <label for="checkbox-modal-2" class="categories-btn float-right"><i
+                                                    class="fas fa-plus"></i></label>
                                         <div class="d-categories">
                                             <ul>
-                                                <li> Lọ gia vị </li>
-                                                <li> Lọ đựng chất hóa học </li>
+                                                <li> Lọ gia vị</li>
+                                                <li> Lọ đựng chất hóa học</li>
                                                 <li> Lọ đựng mỹ phẩm</li>
-                                                <li> Lọ trang trí </li>
+                                                <li> Lọ trang trí</li>
                                                 <li> Lọ thực phẩm</li>
                                             </ul>
                                         </div>
@@ -342,12 +368,13 @@
                                     <li>
                                         <a href="#">Bình Nhựa</a>
                                         <input class="d-none" id="checkbox-modal-3" type="checkbox">
-                                        <label for="checkbox-modal-3" class="categories-btn float-right"><i class="fas fa-plus"></i></label>
+                                        <label for="checkbox-modal-3" class="categories-btn float-right"><i
+                                                    class="fas fa-plus"></i></label>
                                         <div class="d-categories">
                                             <ul>
-                                                <li> Bình đựng nước </li>
-                                                <li> Bình dựng rượu </li>
-                                                <li> Bình đựng chất hóa học </li>
+                                                <li> Bình đựng nước</li>
+                                                <li> Bình dựng rượu</li>
+                                                <li> Bình đựng chất hóa học</li>
                                             </ul>
                                         </div>
                                     </li>
@@ -356,10 +383,10 @@
                             <div class="filter">
                                 <div class="filter-price">
                                     <a href=""><h5>Giá</h5></a>
-                                    <div class="p-3">
-                                        <input class="p-2" placeholder="Tối thiểu" type="number"><span class="text-center">-</span>
-                                        <input class="p-2" placeholder="Tối đa" type="number">
-                                        <button onclick="myFunction()"><i class="fa fa-play" aria-hidden="true"></i></button>
+                                    <div class="pb-3 d-flex justify-content-around">
+                                        <input type="number" placeholder="Tối thiểu"><span class="text-center">-</span>
+                                        <input type="number" placeholder="Tối đa">
+                                        <button><i class="fa fa-play" aria-hidden="true"></i></button>
                                     </div>
                                 </div>
                                 <div class="capacity">
@@ -390,25 +417,34 @@
                                             </label>
                                         </li>
                                     </ul>
+
                                 </div>
-                                <div class="filter-color">
+                                <div class="filter-color mt-4">
                                     <div class="select-color">
                                         <h5>Màu sắc</h5>
                                         <div class="list-color row">
-                                            <a href="#" class="color1 col-2 ml-2 mt-2" style="background-color: #1c7430"></a>
-                                            <a href="#" class="color2 col-2 ml-2 mt-2" style="background-color: #0069d9"></a>
-                                            <a href="#" class="color3 col-1 ml-2 mt-2" style="background-color: #bd2130"></a>
-                                            <a href="#" class="color4 col-1 ml-2 mt-2" style="background-color: #c8cbcf"></a>
-                                            <a href="#" class="color5 col-1 ml-2 mt-2" style="background-color: #e0a800"></a>
-                                            <a href="#" class="color6 col-1 ml-2 mt-2" style="background-color: #fd7e14"></a>
-                                            <a href="#" class="color7 col-1 ml-2 mt-2" style="background-color:#6610f2 "></a>
-                                            <a href="#" class="color8 col-1 ml-2 mt-2" style="background-color: #1b1e21"></a>
+                                            <a href="#" class="color1 col-2 ml-2 mt-2"
+                                               style="background-color: #1c7430"></a>
+                                            <a href="#" class="color2 col-2 ml-2 mt-2"
+                                               style="background-color: #0069d9"></a>
+                                            <a href="#" class="color3 col-1 ml-2 mt-2"
+                                               style="background-color: #bd2130"></a>
+                                            <a href="#" class="color4 col-1 ml-2 mt-2"
+                                               style="background-color: #c8cbcf"></a>
+                                            <a href="#" class="color5 col-1 ml-2 mt-2"
+                                               style="background-color: #e0a800"></a>
+                                            <a href="#" class="color6 col-1 ml-2 mt-2"
+                                               style="background-color: #fd7e14"></a>
+                                            <a href="#" class="color7 col-1 ml-2 mt-2"
+                                               style="background-color:#6610f2 "></a>
+                                            <a href="#" class="color8 col-1 ml-2 mt-2"
+                                               style="background-color: #1b1e21"></a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="material mt-4">
                                     <h5>Chất Liệu</h5>
-                                    <ul>
+                                    <ul class="d-flex justify-content-around">
                                         <li>
                                             <label class="Custom-checkbox"><span>PET</span>
                                                 <input type="checkbox">
@@ -432,33 +468,38 @@
                                 </div>
                                 <div class="shape mt-4">
                                     <h5>Hình Dạng</h5>
-                                    <ul>
-                                        <li><label class="Custom-checkbox"><span>Vuông(16)</span>
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </li>
-                                        <li><label class="Custom-checkbox"><span>Tròn(18)</span>
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </li>
-                                        <li><label class="Custom-checkbox"><span>Trụ(13)</span>
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </li>
-                                        <li><label class="Custom-checkbox"><span>Miệng rộng(10)</span>
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </li>
-                                        <li><label class="Custom-checkbox"><span>Miệng nhỏ(12)</span>
-                                                <input type="checkbox">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                        </li>
-                                    </ul>
+                                    <div class="d-flex justify-content-around">
+                                        <ul class="">
+                                            <li><label class="Custom-checkbox"><span>Vuông(16)</span>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </li>
+                                            <li><label class="Custom-checkbox"><span>Tròn(18)</span>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </li>
+                                            <li><label class="Custom-checkbox"><span>Trụ(13)</span>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                        <ul>
+                                            <li><label class="Custom-checkbox"><span>Miệng rộng(10)</span>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </li>
+                                            <li><label class="Custom-checkbox"><span>Miệng nhỏ(12)</span>
+                                                    <input type="checkbox">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -477,7 +518,7 @@
 </div>
 
 <!--<Footer>-->
-<% include include/footer.ejs%>
+<% include include/footer.ejs %>
 <!--</Footer>-->
 
 <script src="/js/lib/jquery-3.3.1.min.js"></script>
