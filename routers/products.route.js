@@ -4,11 +4,10 @@ var controller = require('../controllers/products.controller');
 var router = express.Router();
 
 
-router.get('/', controller.categories);
+router.get('/:page', controller.categories);
 
 // router.get('/details', controller.details);
 
-router.get('/:id', controller.detail);
-
+router.get('/detail/:id', controller.detail);
 
 module.exports = router;

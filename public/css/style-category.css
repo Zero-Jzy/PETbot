@@ -79,12 +79,16 @@ aside ul li a{
 }
 
 
-aside ul > li:hover > a {
-    color: #f72524;
+aside ul > li > div:first-child:hover a {
+    color: #cea45f;
 }
 
-aside ul > li:hover >label{
-    color: #f72524;
+aside ul > li > div:first-child:hover label{
+    color: #cea45f;
+}
+
+.d-categories ul li:hover{
+    color: #cea45f;
 }
 
 .filter ul li{
@@ -96,11 +100,19 @@ aside ul > li:hover >label{
     padding-left: 10px;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 input[type="number"]{
-    width: 74px;
-    border: 1px solid rgba(49,49,44,0.46);
-    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.2);
     outline: none;
+    padding: 5px;
+    margin: 0 2px;
+    min-width: 65px;
     background-color: white;
     font-size: 12px;
 }
@@ -113,8 +125,9 @@ input[type="number"]{
 
 
 .filter-price button{
-    background-color: #f72524;
-    border-radius: 5px;
+    margin-left: 5px;
+    border-radius: 2px;
+    background-color: #cea45f;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -132,7 +145,6 @@ input[type="number"]{
     border-bottom: none;
 
 }
-
 
 /*Start Custom-checkbox*/
 .Custom-checkbox {
@@ -166,7 +178,7 @@ input[type="number"]{
 }
 
 .Custom-checkbox input:checked ~ .checkmark {
-    background: #0b93ff;
+    background: #cea45f;
 }
 
 .checkmark:after {
@@ -273,27 +285,17 @@ style shape
  */
 .shape{
     margin-top: 20px;
-    border-top: 2px solid rgba(49,49,44,0.18);
     border-bottom: none;
-    padding-top: 20px;
 }
 
+.shape h5 {
+    padding-top: 20px;
+    border-top: 2px solid rgba(49,49,44,0.18);
+    border-bottom: none;
+}
 /*
 card
  */
-
-.card-body h6 a{
-    line-height: 20px;
-    letter-spacing: .02em;
-    display: block;
-    overflow: hidden;
-    color: #1e1e1e;
-    font-size: 14px;
-    margin-bottom: 20px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-weight: 300;
-}
 
 .card a{
     display: block;
@@ -306,38 +308,19 @@ card
     border-color: #cea45f;
 }
 
+.card-title{
+    height: 30px;
+    margin-bottom: 10px;
+}
+
 .card-title a{
     font-size: 22px;
     color: #1e1e1e;
 }
 
 .card-body{
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
 }
-
-/*.card-title a:hover{*/
-    /*color: white;*/
-    /*color: #cea45f;*/
-/*}*/
-
-/*.card-text{*/
-    /*font-size: 15px;*/
-    /*color: #1e1e1e;*/
-/*}*/
-
-/*.card button{*/
-    /*border-color: #cea45f;*/
-/*}*/
-
-/*.center a{*/
-    /*color: #cea45f;*/
-/*}*/
-
-/*.center a:hover{*/
-    /*background-color: #cea45f;*/
-    /*color: white;*/
-/*}*/
 
 
 .card ul li{
@@ -352,13 +335,37 @@ card
 
 }
 
+.card-body .price{
+    font-size: 14px;
+    color: #cea45f;
+}
+
+.card-body .card-title a{
+    line-height: 20px;
+    letter-spacing: .02em;
+    display: block;
+    overflow: hidden;
+    color: #1e1e1e;
+    font-size: 16px;
+    font-weight: 300;
+    transition: .3s;
+ }
+
+.card-body .card-title a:hover{
+    color: #cea45f;
+}
+
+
 .card ul .material-title{
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
     background: #1e1e1e;
     top: 15px;
 }
 
 .card ul .capacity-title{
-    background: #2075eb;
+    background: #cea45f;
     top: 45px;
 }
 
@@ -375,10 +382,6 @@ card
 
 .card:hover .btn-details-products {
     display: block;
-}
-
-.card .price{
-    color: red;
 }
 
 /*_______________________________*/

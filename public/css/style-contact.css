@@ -1,3 +1,6 @@
+.bg-contact{
+    background-color: whitesmoke;
+}
 .breadcrumb{
     background: #f1f3f5;
 }
@@ -33,17 +36,17 @@
 .contact-infor-icon .fa-home{
     font-size: 33px;
     margin-top: 8px;
-    color: #005cbf;
+    color: #cea45f;
 }
 .contact-infor-icon .fa-phone{
     font-size: 33px;
     margin-top: 8px;
-    color: #005cbf;
+    color: #cea45f;
 }
 .contact-infor-icon .fa-envelope{
     font-size: 33px;
     margin-top: 8px;
-    color: #005cbf;
+    color: #cea45f;
 }
 .row .col-lg-5 .form-group input .email{
     padding-top: 30px;
@@ -52,12 +55,12 @@
     background-color: rgba(130,139,178,.1);
 }
 .button-contact-form{
-    border-color: #005cbf;
+    border-color: #cea45f;
 }
 .button-active button:hover{
     border-color: white  ;
 
-    background-color: #005cbf;
+    background-color: #cea45f;
 }
 .contact-infor-boder-top{
     border-top:1px solid #c8cbcf;

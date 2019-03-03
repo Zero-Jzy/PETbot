@@ -59,11 +59,11 @@ $(document).ready(function () {
         $(a).click(function () {
             if (!$(this).prev().is(":checked")) {
                 console.log('1');
-                $(this).next().animate({height: 'show'}, 300);
+                $(this).parent().next().animate({height: 'show'}, 300);
                 $(this).html('<i class="fas fa-minus"></i>')
             } else {
                 console.log('2');
-                $(this).next().animate({height: 'hide'}, 300);
+                $(this).parent().next().animate({height: 'hide'}, 300);
                 $(this).html('<i class="fas fa-plus"></i>')
 
             }
@@ -73,24 +73,25 @@ $(document).ready(function () {
     toggle('.categories-btn-modal');
     toggle('.categories-btn');
 
+    function resizeImg() {
+        var cw = $('.img-products').width();
+        $('.img-products').css({
+            'height': cw + 'px'
+        });
+    }
+    resizeImg();
+
     $(window).resize(function(){
+
         if ($(window).width() <= 768 ){
             $('.title-item-menu i').removeClass('fa-angle-right').addClass('fa-plus');
             $('#megamenu > div').removeClass('item-menu-hover');
-            var cw = $('.img-products').width();
-            $('.img-products').css({
-                'height': cw + 'px'
-            });
         }else {
             $('.title-item-menu i').removeClass('fa-plus').addClass('fa-angle-right');
             $('#megamenu > div').addClass('item-menu-hover');
         }
 
-        var cw = $('.img-products').width();
-        $('.img-products').css({
-            'height': cw + 'px'
-        });
-
+        resizeImg()
     });
 
     $(".item-menu-hover").hover(
@@ -109,12 +110,13 @@ $(document).ready(function () {
 
     });
 
-
-    var cw = $('.img-products').width();
-    $('.img-products').css({
-        'height': cw + 'px'
+    $('#carouselExampleIndicators').hover(function () {
+        $('.btn-prev-carousel').css('opacity','1');
+        $('.btn-next-carousel').css('opacity','1')
+    }, function(){
+        $('.btn-prev-carousel').css('opacity','0');
+        $('.btn-next-carousel').css('opacity','0')
     });
-
 
 });
 //
