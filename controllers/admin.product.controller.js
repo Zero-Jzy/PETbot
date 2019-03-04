@@ -30,7 +30,7 @@ exports.postEditProducts = function (req, res) {
         material: req.body.material,
         color: req.body.color,
         capacity: req.body.capacity,
-        category: req.body.loaisanpham + "/" + req.body.congDung,
+        category: req.body.loaisanpham,
         shape: req.body.shape,
         neckSize: req.body.neckSize,
         height: req.body.height,

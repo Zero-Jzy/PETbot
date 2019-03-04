@@ -16,62 +16,85 @@
 <body>
 
 <!--<Header>-->
-<% include include/header.ejs%>
+<% include include/header.ejs %>
 <!--</Header>-->
 
 <div class="slide-show py-4">
     <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+        <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators p-carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item p-carousel-item row active">
-                    <div class="carousel-title col-6 p-carousel-title">
-                        <div class="carousel-box-title">
-                            <h1>Sản phẩm bền, đẹp và đa dạng.</h1>
-                            <button class="btn-slide-show">Chi Tiết</button>
+                <div class="carousel-item p-carousel-item active">
+                    <div class="row h-100">
+                        <div class="col-5">
+                            <div class="carousel-box-title">
+                                <span class="h6 d-block mr-3 fadeInLeft"><em>Sản phẩm </em></span>
+                                <span class="roboto text-uppercase d-block fadeInLeft">bền, đẹp</span>
+                                <span class="roboto d-block fadeInLeft text-uppercase" >&amp;&nbsp;&nbsp;đa dạng.</span>
+                                <p style="animation-delay: .7s; color: rgba(0,0,0,0.5);font-weight: 100"
+                                   class="fadeIn d-none d-md-block">Chúng tôi có những sản phẩm tốt và đa dạng mẫu mã.</p>
+                                <button style="animation-delay: .7s" class="btn-carousel-show fadeIn">Chi Tiết</button>
+                            </div>
                         </div>
-
-                    </div>
-                    <div class="carousel-box-img col-6">
-                        <img class="d-block" src="/img/img-slideshow-homepage1.jpg" alt="Second slide">
+                        <div class="col-7">
+                            <img src="/img/img-slideshow-homepage1.jpg" class="d-block w-100 fadeIn" alt="...">
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item p-carousel-item row">
-                    <div class="carousel-title  col-6 p-carousel-title">
-                        <div class="carousel-box-title">
-                            <h1>An toàn, hợp vệ sinh.</h1>
-                            <button class="btn-slide-show">Chi Tiết</button>
+                <div class="carousel-item p-carousel-item">
+                    <div class="row h-100">
+                        <div class="col-5">
+                            <div class="carousel-box-title fadeInLeft">
+                                <span>&nbsp;</span>
+                                <span class="roboto d-inline-block text-uppercase fadeInLeft">An toàn,</span>
+                                <span class="roboto d-block text-uppercase fadeInLeft">hợp vệ sinh.</span>
+                                <p style="animation-delay: .7s; color: rgba(0,0,0,0.5);font-weight: 100" class="fadeIn d-none d-md-block">
+                                    Sản phẩm của chúng tôi luôn đảm bảo an toàn hợp vệ sinh.</p>
+                                <button style="animation-delay: .7s" class="btn-carousel-show fadeIn">Chi Tiết</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-box-img col-6">
-                        <img class="d-block" src="/img/img-slideshow-homepage2.jpg" alt="Second slide">
+                        <div class="col-7">
+                            <img src="/img/img-slideshow-homepage2.jpg" class="d-block w-100 fadeIn" alt="...">
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item p-carousel-item row">
-                    <div class="carousel-title col-6 p-carousel-title">
-                        <div class="carousel-box-title">
-                            <h1>Gia công số lượng lớn. </h1>
-                            <button class="btn-slide-show">Chi Tiết</button>
+                <div class="carousel-item p-carousel-item">
+                    <div class="row h-100">
+                        <div class="col-5">
+                            <div class="carousel-box-title  fadeInLeft">
+                                <span>&nbsp;</span>
+                                <span class="roboto d-inline-block text-uppercase fadeInLeft">Gia công số lượng lớn. </span>
+                                <p style="animation-delay: .7s; color: rgba(0,0,0,0.5);font-weight: 100" class="fadeIn d-none d-md-block">
+                                    Chúng tôi gia công sản phẩm với số lượng lớn. Đáp ứng nhu mọi nhu cầu của khách hàng.</p>
+                                <button style="animation-delay: .7s" class="btn-carousel-show fadeIn">Chi Tiết</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="carousel-box-img col-6">
-                        <img class="d-block" src="/img/img-slideshow-homepage3.jpg" alt="Second slide">
+                        <div class="col-7">
+                            <img src="/img/img-slideshow-homepage3.jpg" class="d-block w-100 fadeIn" alt="...">
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="btn-prev-carousel" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <i class="fas fa-chevron-left"></i>
+            <div class="btn-prev-carousel" href="#myCarousel" role="button" data-slide="prev">
+                <i class="fas fa-chevron-left"></i>
             </div>
-            <div class="btn-next-carousel" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <i class="fas fa-chevron-right"></i>
+            <div class="btn-next-carousel" href="#myCarousel" role="button" data-slide="next">
+                <i class="fas fa-chevron-right"></i>
             </div>
+        </div>
+        <div class="slogan">
+            <p>“Tâm sáng dẫn đường” .. Chữ “Tâm sáng” hình thành nên nền tảng kinh doanh của chúng tôi. Mọi hoạt động kinh doanh được chi phối bởi..
+            </p>
         </div>
     </div>
 </div>
+
+
+
 <section class="my-5">
     <div class="main-products">
         <div class="container border-bottom">
@@ -86,7 +109,8 @@
                         <img class="card-img-top" src="/img/main-products/index-img.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Chai nước giải khát 38mm</h5>
-                            <p class="card-text">Với nội dung trà hoặc nước trái cây chất lượng cao, hộp đựng trong suốt ...</p>
+                            <p class="card-text">Với nội dung trà hoặc nước trái cây chất lượng cao, hộp đựng trong suốt
+                                ...</p>
                             <div class="box-read-more">
                                 <a href="#" class="btn">Xem Thêm</a>
                             </div>
@@ -98,7 +122,8 @@
                         <img class="card-img-top" src="/img/main-products/index-img_1.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Sê-ri miệng rộng 53mm</h5>
-                            <p class="card-text">Sê-ri 53mm, có độ trong suốt như pha lê, chất lượng nhẹ để mang theo và dễ dàng ...</p>
+                            <p class="card-text">Sê-ri 53mm, có độ trong suốt như pha lê, chất lượng nhẹ để mang theo và
+                                dễ dàng ...</p>
                             <div class="box-read-more">
                                 <a href="#" class="btn">Xem Thêm</a>
                             </div>
@@ -110,7 +135,8 @@
                         <img class="card-img-top" src="/img/main-products/index-img_2.jpg" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">Dòng hũ nhựa dễ mở</h5>
-                            <p class="card-text">Chúng tôi cung cấp các sản phẩm chai nhựa chất lượng cao được làm bằng ...</p>
+                            <p class="card-text">Chúng tôi cung cấp các sản phẩm chai nhựa chất lượng cao được làm bằng
+                                ...</p>
                             <div class="box-read-more">
                                 <a href="#" class="btn">Xem Thêm</a>
                             </div>
@@ -123,8 +149,9 @@
     </div>
 </section>
 
+
 <!--<Footer>-->
-<% include include/footer.ejs%>
+<% include include/footer.ejs %>
 <!--</Footer>-->
 
 <script src="/js/lib/jquery-3.3.1.min.js"></script>

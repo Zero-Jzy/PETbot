@@ -87,12 +87,7 @@
                         </ul>
                     </li>
                     <li>
-                        <a class="has-arrow" href="mailbox.html" aria-expanded="false"><i class="fa big-icon fa-envelope icon-wrap"></i> <span class="mini-click-non">Mailbox</span></a>
-                        <ul class="submenu-angle" aria-expanded="false">
-                            <li><a title="Inbox" href="mailbox.html"><i class="fa fa-inbox sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Inbox</span></a></li>
-                            <li><a title="View Mail" href="mailbox-view.html"><i class="fa fa-television sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">View Mail</span></a></li>
-                            <li><a title="Compose Mail" href="mailbox-compose.html"><i class="fa fa-paper-plane sub-icon-mg" aria-hidden="true"></i> <span class="mini-sub-pro">Compose Mail</span></a></li>
-                        </ul>
+                        <a class="has-arrow" href="/admin/mailbox"><i class="fa big-icon fa-envelope icon-wrap"></i><span>Mailbox</span></a>
                     </li>
                 </ul>
             </nav>
@@ -856,7 +851,7 @@
                                 <li><a href="#INFORMATION"><i class="fa fa-commenting" aria-hidden="true"></i> Review</a></li>
                             </ul>
                             <div id="myTabContent" class="tab-content custom-product-edit">
-                                <div ng-app="myApp"  ng-controller="myCtrl" class="product-tab-list tab-pane fade active in" id="description">
+                                <div  class="product-tab-list tab-pane fade active in" id="description">
                                     <form action="" method="post" enctype="multipart/form-data">
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
@@ -881,15 +876,19 @@
                                                         <span class="input-group-addon"><i class="fa fa-ticket" aria-hidden="true"></i></span>
                                                         <input type="text" class="form-control" name="description" placeholder="Miêu Tả">
                                                     </div>
-                                                    <select name="loaisanpham" ng-model="loaisanpham" ng-change="showSelectValue1(loaisanpham)" class="form-control pro-edt-select form-control-primary">
+                                                    <select name="loaisanpham" ng-change="showSelectValue1(loaisanpham)" class="form-control pro-edt-select form-control-primary">
                                                         <option value="">Loại sản phẩm</option>
-                                                        <option value="chaiNhua">Chai Nhựa</option>
-                                                        <option value="loNhua">Lọ Nhưa</option>
-                                                        <option value="binhNhua">Bình Nhựa</option>
-                                                    </select>
-                                                    <select style="margin-top: 15px" name="congDung" ng-model="congDung" ng-change="congdungfunction(congDung)" class="form-control pro-edt-select form-control-primary">
-                                                        <option value="">Công dụng</option>
-                                                        <option ng-repeat="option in congDung " value="{{option.value}}">{{option.name}}</option>
+                                                        <option value="chaiNhua/chaiDoUong">Chai đựng đồ uống</option>
+                                                        <option value="chaiNhua/chaiHoaHoc">Chai đựng chất hóa học</option>
+                                                        <option value="chaiNhua">Chai đựng dược phẩm</option>
+                                                        <option value="loNhua/giaVi">Lọ gia vị</option>
+                                                        <option value="loNhua/loHoaHoc">Lọ đựng chất hóa học</option>
+                                                        <option value="loNhua/trangTri">Lọ thực phẩm</option>
+                                                        <option value="loNhua/thucPham">Lọ thực phẩm</option>
+                                                        <option value="loNhua/myPham">Lọ đựng mỹ phẩm</option>
+                                                        <option value="binhNhua/dungNuoc">Bình đựng nước</option>
+                                                        <option value="binhNhua/binhHoaHoc">Bình đựng chất hóa học</option>
+                                                        <option value="binhNhua/dungRuou">Bình đựng rượu</option>
                                                     </select>
                                                     <select style="margin-top: 15px" name="material" class="form-control pro-edt-select form-control-primary">
                                                         <option value="">Chất Liệu</option>
@@ -1035,71 +1034,4 @@
 
 <script src="/js/myjs.js"></script>
 </body>
-<script>
-
-
-    var app = angular.module('myApp', []);
-    app.controller('myCtrl', function($scope) {
-        $scope.showSelectValue1 = function(loaisanpham) {
-            if(loaisanpham === "chaiNhua"){
-                $scope.congDung = [
-                    {
-                        value:"chaiDoUong",
-                        name:"chai đựng đồ uống"
-                    },
-                    {
-                        value:"chaiHoaHoc",
-                        name:"chai đựng chất hóa học"
-                    },
-                    {
-                        value:"duocPham",
-                        name:"chai đựng dược phẩm"
-                    }
-                ]
-            }else if(loaisanpham === "loNhua"){
-                $scope.congDung = [
-                    {
-                        value:"giaVi",
-                        name:"lọ gia vị"
-                    },
-                    {
-                        value:"loHoaHoc",
-                        name:"lọ đựng chất hóa học"
-                    },
-                    {
-                        value:"trangTri",
-                        name:"lọ thực phẩm"
-                    },
-                    {
-                        value:"thucPham",
-                        name:"lọ thực phẩm"
-                    },
-                    {
-                        value:"myPham",
-                        name:"lọ đựng mỹ phẩm"
-                    }
-                ]
-            }
-            else if(loaisanpham === "binhNhua"){
-                $scope.congDung = [
-                    {
-                        value:"dungNuoc",
-                        name:"bình đựng nước"
-                    },
-                    {
-                        value:"binhHoaHoc",
-                        name:"bình đựng chất hóa học"
-                    },
-                    {
-                        value:"dungRuou",
-                        name:"bình đựng rượu"
-                    }
-                ]
-            }
-        }
-
-    });
-
-
-</script>
 </html>

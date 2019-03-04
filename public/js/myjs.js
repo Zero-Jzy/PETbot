@@ -3,7 +3,7 @@
 function deleteProduct(id) {
     if(confirm('Bạn có muốn xóa sản phẩm?')) {
         $.ajax({
-            url: 'http://localhost:3009/admin/products/list-products/' + id,
+            url: 'http://localhost:3000/admin/products/list-products/' + id,
             type: 'DELETE',
             data: {"_id": id},
             success: function (response) {
@@ -104,13 +104,20 @@ $(document).ready(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() >= 165) {
             $('.scroll-nav').css('transform', 'translateY(100px)');
+            $('.back-top').css('opacity','1')
         } else {
             $('.scroll-nav').css('transform', 'translateY(-100px)');
+            $('.back-top').css('opacity','0')
+
         }
 
     });
 
-    $('#carouselExampleIndicators').hover(function () {
+    $('#back-top-button').click( function() {
+        $('html, body').animate({scrollTop:0}, '300');
+    });
+
+    $('#myCarousel').hover(function () {
         $('.btn-prev-carousel').css('opacity','1');
         $('.btn-next-carousel').css('opacity','1')
     }, function(){

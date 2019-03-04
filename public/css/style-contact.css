@@ -1,20 +1,4 @@
-.bg-contact{
-    background-color: whitesmoke;
-}
-.breadcrumb{
-    background: #f1f3f5;
-}
 
-.mybreadcrumb{
-    margin-left: 20px;
-    padding: 40px 0;
-    font-size: 14px;
-}
-
-
-.mybreadcrumb a{
-    color: cadetblue;
-}
 .media{
     display: flex;
 }

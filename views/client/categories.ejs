@@ -5,15 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Danh Mục Sản Phẩm - PETbot</title>
+    <title>Danh mục sản phẩm - PETbot</title>
     <link rel="icon" href="/img/logo/logoPETbot.png" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style-category.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-    <title>Danh Mục Sản Phẩm - PETbot</title>
 </head>
 <body>
 
@@ -250,70 +248,40 @@
                                     </div>
                                 </div>
                             <% }) %>
-                            <!--<div class="col-lg-4 col-md-6 mb-4">-->
-                            <!--<div class="card h-100">-->
-                            <!--<a href="#">-->
-                            <!--<div class="img-products" style="width: 100%;background-image: url('/img/chai1.jpg')"></div>-->
-                            <!--&lt;!&ndash;<img class="card-img-top" src="/img/chai1.jpg" alt="">&ndash;&gt;-->
-                            <!--</a>-->
-                            <!--<div class="card-body">-->
-                            <!--<h6 class="card-title">-->
-                            <!--<a href="">Chai nhựa hình bầu dục</a>-->
-                            <!--</h6>-->
-                            <!--<h5 class="price">$2.99</h5>-->
-                            <!--</div>-->
-                            <!--&lt;!&ndash;<button type="button" class="btn btn-outline-secondary btn-lg btn-block">Chi tiết sản phẩm</button>&ndash;&gt;-->
-                            <!--<ul class="m-0">-->
-                            <!--<li class="material-title">PET</li>-->
-                            <!--<li class="capacity-title">500ml</li>-->
-                            <!--</ul>-->
-                            <!--</div>-->
-                            <!--</div>-->
-
                         </div>
                     </div>
                     <!--</Products List>-->
-
-                    <div class="">
-                        <div class="ml-auto">
-                            <% if (pages > 0) { %>
-                                <ul class="pagination">
-                                    <% if (current == 1) { %>
-                                        <li class="disabled page-item"><a class="page-link">Trang đầu</a></li>
-                                    <% } else { %>
-                                        <li class="page-item"><a class="page-link" href="/products/trang-1">Trang
-                                                đầu</a></li>
-                                    <% } %>
-
-                                    <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
-                                    <% if (i !== 1) { %>
-                                        <li class="disabled page-item"><a class="page-link">...</a></li>
-                                    <% } %>
-
-                                    <% for (; i <= (Number(current) + 4) && i <= pages; i++) { %>
-
-                                        <% if (i == current) { %>
-                                            <li class="active page-item"><a class="page-link"><%= i %></a></li>
-                                        <% } else { %>
-                                            <li class="page-item"><a class="page-link"
-                                                                     href="/products/trang-<%= i %>"><%= i %></a></li>
-                                        <% } %>
-
-                                        <% if (i == Number(current) + 4 && i < pages) { %>
-                                            <li class="disabled page-item"><a class="page-link">...</a></li>
-                                        <% } %>
-
-                                    <% } %>
-
-                                    <% if (current == pages) { %>
-                                        <li class="disabled page-item"><a class="page-link">Last</a></li>
-                                    <% } else { %>
-                                        <li class="page-item"><a class="page-link" href="/products/trang-<%= pages %>">Last</a>
-                                        </li>
-                                    <% } %>
-                                </ul>
+                    <div>
+                        <ul class="pagination">
+                            <% if (current == 1) { %>
+                                <a class="disabled" href="#"><li style="width: auto"><</li></a>
+                            <% } else { %>
+                                    <a href="/products/trang-1"><li><-</li></a>
                             <% } %>
-                        </div>
+
+                            <% var i = (Number(current) > 5 ? Number(current) - 4 : 1) %>
+                            <% if (i !== 1) { %>
+                                    <a class="disabled" href="#"><li>...</li></a>
+                            <% } %>
+
+                            <% for (; i <= (Number(current) + 4) && i <= pages; i++) { %>
+
+                                <% if (i == current) { %>
+                                    <a class="is-active" href="#"><li><%= i %></li></a>
+                                <% } else { %>
+                                        <a href="/products/trang-<%= i %>"><li><%= i %></li></a>
+                                <% } %>
+                                <% if (i == Number(current) + 4 && i < pages) { %>
+                                        <a class="disabled" href="#"><li>...</li></a>
+                                <% } %>
+                            <% } %>
+                            <% if (current == pages) { %>
+                                    <a class="disabled" href="#"><li>-></li></a>
+                            <% } else { %>
+                                    <a href="/products/trang-<%= pages %>"><li style="width: auto">></li></a>
+                            <% } %>
+                        </ul>
+                        <div class="clearfix"></div>
                     </div>
                 </div>
             </div>
